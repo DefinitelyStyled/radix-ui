@@ -1,0 +1,104 @@
+@st-import [
+    --blackA7,
+    --mauve6,
+    --mauve11,
+    --violet3,
+    --violet5,
+    --violet9,
+    --violet10,
+    --violet11,
+    --white
+] from "./common.st.css";
+
+.root {
+    /* width: 100%; */
+    display: flex;
+    padding: 10px;
+    min-width: max-content;
+    border-radius: 6px;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px var(--blackA7);
+}
+
+.itemStyle {
+    all: unset;
+    flex: 0 0 auto;
+    color: var(--mauve11);
+    height: 25px;
+    padding: 0 5px;
+    border-radius: 4px;
+    display: inline-flex;
+    font-size: 13px;
+    line-height: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemStyle:hover {
+    background-color: var(--violet3);
+    color: var(--violet11);
+
+}
+
+.itemStyle:focus {
+    position: relative;
+    box-shadow: 0 0 0 2px var(--violet7);
+}
+
+.toggleGroup {
+    display: inline-flex;
+    border-radius: 4px;
+}
+
+.toggleItem {
+    -st-states: state-on("[data-state=on]");
+    -st-mixin: itemStyle;
+    box-shadow: 0;
+    background-color: var(--white);
+    margin-left: 2px;
+
+}
+
+.toggleItem:state-on {
+    background-color: var(--violet5);
+    color: var(--violet11);
+
+}
+
+.toggleItem:first-child {
+    margin-left: 0;
+
+}
+
+.icon {}
+
+.separator {
+    width: 1px;
+    background-color: var(--mauve6);
+    margin: 0 10px;
+}
+
+.link {
+    -st-mixin: itemStyle;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.button {
+    -st-mixin: itemStyle;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--violet9);
+    color: var(--white);
+}
+
+.button:hover {
+    background-color: var(--violet10);
+    color: var(--white);
+    cursor: pointer;
+}
