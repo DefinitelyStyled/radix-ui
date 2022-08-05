@@ -8,50 +8,38 @@
     --violet10,
     --violet11,
     --white
-] from "./common.st.css";
+] from "../../common.st.css";
+@st-import Toolbar from "./toolbar.st.css";
 
 .root {
-    /* width: 100%; */
-    display: flex;
+    -st-extends: Toolbar;
     padding: 10px;
-    min-width: max-content;
     border-radius: 6px;
     background-color: var(--white);
     box-shadow: 0 2px 10px var(--blackA7);
 }
 
 .itemStyle {
-    all: unset;
-    flex: 0 0 auto;
     color: var(--mauve11);
-    height: 25px;
     padding: 0 5px;
     border-radius: 4px;
-    display: inline-flex;
     font-size: 13px;
-    line-height: 1px;
-    align-items: center;
-    justify-content: center;
 }
 
 .itemStyle:hover {
     background-color: var(--violet3);
     color: var(--violet11);
-
 }
 
-.itemStyle:focus {
-    position: relative;
+.root::itemStyle:focus {
     box-shadow: 0 0 0 2px var(--violet7);
 }
 
-.toggleGroup {
-    display: inline-flex;
+.root::toggleGroup {
     border-radius: 4px;
 }
 
-.toggleItem {
-    -st-states: state-on("[data-state=on]");
+.root::toggleItem {
     -st-mixin: itemStyle;
     box-shadow: 0;
     background-color: var(--white);
@@ -59,36 +47,31 @@
 
 }
 
-.toggleItem:state-on {
+.root::toggleItem:state-on {
     background-color: var(--violet5);
     color: var(--violet11);
-
 }
 
-.toggleItem:first-child {
+.root::toggleItem:first-child {
     margin-left: 0;
-
 }
 
-.icon {}
+.root::icon {}
 
-.separator {
-    width: 1px;
+.root::separator {
     background-color: var(--mauve6);
     margin: 0 10px;
 }
 
-.link {
+.root::link {
     -st-mixin: itemStyle;
     background-color: transparent;
     margin-right: 10px;
 }
 
-.link:hover {
-    cursor: pointer;
-}
+.root::link:hover {}
 
-.button {
+.root::button {
     -st-mixin: itemStyle;
     margin-left: auto;
     padding-left: 10px;
@@ -97,8 +80,7 @@
     color: var(--white);
 }
 
-.button:hover {
+.root::button:hover {
     background-color: var(--violet10);
     color: var(--white);
-    cursor: pointer;
 }

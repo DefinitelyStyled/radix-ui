@@ -1,0 +1,8 @@
+@st-import Toolbar from "../components/toolbar/toolbar.st.css";
+@st-import ToolbarVariant from "../components/toolbar/toolbar.variant.st.css";
+
+@st-scope * {
+    Toolbar {
+        -st-mixin: ToolbarVariant;
+    }
+}

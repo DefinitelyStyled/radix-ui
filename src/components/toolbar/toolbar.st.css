@@ -1,0 +1,56 @@
+.root {
+    display: flex;
+    min-width: max-content;
+}
+
+.itemStyle {
+    all: unset;
+    flex: 0 0 auto;
+    height: 25px;
+    display: inline-flex;
+    line-height: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemStyle:hover {}
+
+.itemStyle:focus {
+    position: relative;
+}
+
+.toggleGroup {
+    display: inline-flex;
+}
+
+.toggleItem {
+    -st-states: state-on("[data-state=on]");
+    -st-mixin: itemStyle;
+
+}
+
+.toggleItem:state-on {}
+
+.toggleItem:first-child {}
+
+.icon {}
+
+.separator {
+    width: 1px;
+}
+
+.link {
+    -st-mixin: itemStyle;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.button {
+    -st-mixin: itemStyle;
+}
+
+.button:hover {
+    cursor: pointer;
+}

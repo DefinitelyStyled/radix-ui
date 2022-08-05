@@ -1,15 +1,5 @@
-@st-import Toolbar from "./toolbar.st.css";
-@st-import [
-    --blackA7,
-    --mauve6,
-    --mauve11,
-    --violet3,
-    --violet5,
-    --violet9,
-    --violet10,
-    --violet11,
-    --white
-] from "./common.st.css";
+@st-import Toolbar from "./components/toolbar/toolbar.st.css";
+/* @st-import [darkTheme] from "./theme/dark.st.css"; */
 
 .root {
     height: 100vh;
@@ -22,8 +12,4 @@
 .toolbar {
     -st-extends: Toolbar;
     margin: 1em 0;
-}
-
-.dark .toolbar {
-    --white: hsl(0, 0%, 10%);
 }
