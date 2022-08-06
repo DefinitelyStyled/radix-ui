@@ -11,7 +11,6 @@
 }
 
 :global(html) {
-  background: hsl(0, 0%, 30%);
   font-family:
     system-ui,
     /* macOS 10.11-10.12 */

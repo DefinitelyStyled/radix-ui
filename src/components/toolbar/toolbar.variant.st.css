@@ -1,5 +1,6 @@
 @st-import [
     --blackA7,
+    --mauve2,
     --mauve6,
     --mauve11,
     --violet3,
@@ -15,7 +16,7 @@
     -st-extends: Toolbar;
     padding: 10px;
     border-radius: 6px;
-    background-color: var(--white);
+    background-color: var(--mauve2);
     box-shadow: 0 2px 10px var(--blackA7);
 }
 

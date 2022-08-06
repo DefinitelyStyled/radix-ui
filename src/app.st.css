@@ -1,5 +1,5 @@
 @st-import Toolbar from "./components/toolbar/toolbar.st.css";
-/* @st-import [darkTheme] from "./theme/dark.st.css"; */
+@st-import Accordion from "./components/accordion/accordion.st.css";
 
 .root {
     height: 100vh;
@@ -12,4 +12,21 @@
 .toolbar {
     -st-extends: Toolbar;
     margin: 1em 0;
+}
+
+.accordion {
+    -st-extends: Accordion;
+    margin: 1em 0;
+}
+
+.compSection {
+    border-radius: 6px;
+    background: hsl(0, 0%, 30%);
+    padding: 1em;
+    margin: 1em;
+}
+
+.compTitle {
+    margin: 0;
+    color: white;
 }

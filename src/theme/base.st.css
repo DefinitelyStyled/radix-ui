@@ -1,8 +1,15 @@
 @st-import Toolbar from "../components/toolbar/toolbar.st.css";
 @st-import ToolbarVariant from "../components/toolbar/toolbar.variant.st.css";
 
+@st-import Accordion from "../components/accordion/accordion.st.css";
+@st-import AccordionVariant from "../components/accordion/accordion.variant.st.css";
+
 @st-scope * {
     Toolbar {
         -st-mixin: ToolbarVariant;
+    }
+
+    Accordion {
+        -st-mixin: AccordionVariant;
     }
 }
