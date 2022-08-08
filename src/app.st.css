@@ -1,12 +1,25 @@
 @st-import Toolbar from "./components/toolbar/toolbar.st.css";
 @st-import Accordion from "./components/accordion/accordion.st.css";
+@st-import AspectRatio from "./components/aspect-ratio/aspect-ratio.st.css";
 
 .root {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.compSection {
+    min-width: 300px;
+    border-radius: 6px;
+    background: hsl(0, 0%, 30%);
+    padding: 1em;
+    margin: 1em;
+}
+
+.compTitle {
+    margin: 0;
+    color: white;
 }
 
 .toolbar {
@@ -19,14 +32,6 @@
     margin: 1em 0;
 }
 
-.compSection {
-    border-radius: 6px;
-    background: hsl(0, 0%, 30%);
-    padding: 1em;
-    margin: 1em;
-}
-
-.compTitle {
-    margin: 0;
-    color: white;
+.aspectRatio {
+    -st-extends: AspectRatio;
 }

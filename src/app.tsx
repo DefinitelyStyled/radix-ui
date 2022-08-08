@@ -6,6 +6,7 @@ import { ToolbarDemo } from './demo/toolbar-demo';
 import './theme/base.st.css';
 import { classes as darkTheme } from './theme/dark.st.css';
 import AccordionDemo from './demo/accordion-demo';
+import AspectRatioDemo from './demo/aspect-ratio-demo';
 
 export interface AppProps {
     className?: string;
@@ -30,6 +31,12 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={darkTheme.root}>
                     <AccordionDemo className={classes.accordion} />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Aspect Ratio</h2>
+                <div>
+                    <AspectRatioDemo className={classes.aspectRatio} />
                 </div>
             </div>
         </main>
