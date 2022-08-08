@@ -1,14 +1,9 @@
-@property st-global(--radix-accordion-content-height);
-
 .root {}
 
 .item {
     overflow: hidden;
 }
 
-.item:first-child {}
-
-.item:last-child {}
 
 .item:focus-within {
     position: relative;
@@ -21,7 +16,7 @@
 }
 
 .trigger {
-    -st-states: closed('data-state="closed"'), open('data-state="open"');
+    -st-states: closed('[data-state="closed"]'), open('[data-state="open"]');
     all: unset;
     height: 45px;
     flex: 1;
@@ -31,13 +26,9 @@
     line-height: 1px;
 }
 
-.trigger:open,
-.trigger:closed {}
-
-.trigger:hover {}
 
 .content {
-    -st-states: open('data-state="open"'),
+    -st-states: open('[data-state="open"]'),
         closed('data-state="closed"'),
         disabled('data-disabled');
 }

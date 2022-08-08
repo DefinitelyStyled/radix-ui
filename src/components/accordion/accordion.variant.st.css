@@ -1,5 +1,5 @@
 @st-import [--blackA4, --mauve1, --mauve2, --mauve4, --mauve6, --mauve11, --mauve12, --violet11, --white] from '../../common.st.css';
-@st-import Accordion, [content] from './accordion.st.css';
+@st-import Accordion from './accordion.st.css';
 
 @property st-global(--radix-accordion-content-height);
 
