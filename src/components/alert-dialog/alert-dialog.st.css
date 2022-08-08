@@ -1,0 +1,26 @@
+.root {}
+
+.trigger {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]');
+}
+
+.portal {}
+
+.overlay {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]');
+}
+
+.content {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]');
+}
+
+.title {}
+
+.description {}
+
+.cancel {}
+
+.action {}

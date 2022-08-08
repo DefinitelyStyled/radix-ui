@@ -1,0 +1,12 @@
+.root {
+  -st-states: vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]');
+}
+
+.item {
+  -st-states: on('[data-state="on"]'),
+    off('[data-state="off"]'),
+    disabled('[data-disabled]'),
+    vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]');
+}

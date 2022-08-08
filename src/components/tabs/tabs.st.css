@@ -1,0 +1,24 @@
+.root {
+  -st-states: vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]');
+}
+
+.list {
+  -st-states: vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]');
+}
+
+.trigger {
+  -st-states: active('[data-state="active"]'),
+    inactive('[data-state="inactive"]'),
+    disabled('[data-disabled]'),
+    vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]')
+}
+
+.content {
+  -st-states: active('[data-state="active"]'),
+    inactive('[data-state="inactive"]'),
+    vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]')
+}

@@ -48,7 +48,7 @@
 
 }
 
-.root::toggleItem:state-on {
+.root::toggleItem:on {
     background-color: var(--violet5);
     color: var(--violet11);
 }
@@ -57,7 +57,6 @@
     margin-left: 0;
 }
 
-.root::icon {}
 
 .root::separator {
     background-color: var(--mauve6);

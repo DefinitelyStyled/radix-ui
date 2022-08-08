@@ -1,0 +1,19 @@
+.root {
+  -st-states: complete('[data-state="complete"]'),
+    indeterminate('[data-state="indeterminate"]'),
+    loading('[data-state="loading"]'),
+
+    /* TODO: value states */
+    value('[data-value]'),
+    max('[data-max]'),
+}
+
+.indicator {
+  -st-states: complete('[data-state="complete"]'),
+    indeterminate('[data-state="indeterminate"]'),
+    loading('[data-state="loading"]'),
+
+    /* TODO: value states */
+    value('[data-value]'),
+    max('[data-max]');
+}

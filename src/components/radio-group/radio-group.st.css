@@ -1,0 +1,13 @@
+.root {}
+
+.item {
+  -st-states: checked('[data-state="checked"]'),
+    unchecked('[data-state="unchecked"]'),
+    disabled('[data-disabled]');
+}
+
+.indicator {
+  -st-states: checked('[data-state="checked"]'),
+    unchecked('[data-state="unchecked"]'),
+    disabled('[data-disabled]');
+}

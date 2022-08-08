@@ -1,0 +1,42 @@
+.root {}
+
+.trigger {
+  -st-states: open('[data-state="open"]'),
+    closed('[data-state="closed"]'),
+    disabled('[data-disabled]'),
+    placeholder('[data-placeholder]');
+}
+
+.value {}
+
+.icon {}
+
+.portal {}
+
+.content {
+  -st-states: open('[data-state="open"]'),
+    closed('[data-state="closed"]');
+}
+
+.viewport {}
+
+.item {
+  -st-states: checked('[data-state="checked"]'),
+    unchecked('[data-state="unchecked"]'),
+    highlighted('[data-highlighted]'),
+    disabled('[data-disabled]');
+}
+
+.itemText {}
+
+.itemIndicator {}
+
+.scrollUpButton {}
+
+.scrollDownButton {}
+
+.group {}
+
+.label {}
+
+.separator {}

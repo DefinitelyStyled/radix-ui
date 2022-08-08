@@ -1,0 +1,32 @@
+@property st-global(--radix-toast-swipe-move-x);
+@property st-global(--radix-toast-swipe-move-y);
+@property st-global(--radix-toast-swipe-end-x);
+@property st-global(--radix-toast-swipe-end-y);
+
+.root {
+  -st-states:
+    open('[data-state="open"]'),
+    closed('[data-state="closed"]'),
+
+    start('[data-swipe="start"]'),
+    move('[data-swipe="move"]'),
+    cancel('[data-swipe="cancel"]'),
+    end('[data-swipe="end"]'),
+
+    up('[data-swipe-direction="up"]'),
+    down('[data-swipe-direction="down"]'),
+    left('[data-swipe-direction="left"]'),
+    right('[data-swipe-direction="right"]');
+}
+
+.viewport {
+  /* TODO: this might be above the root? */
+}
+
+.title {}
+
+.description {}
+
+.action {}
+
+.close {}

@@ -1,0 +1,82 @@
+.root {}
+
+.trigger {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]');
+}
+
+.portal {}
+
+@property st-global(--radix-context-menu-content-transform-origin);
+
+.content {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]'),
+
+        left('[data-side="left"]'),
+        right('[data-side="right"]'),
+        bottom('[data-side="bottom"]'),
+        top('[data-side="top"]'),
+
+        start('[data-align="start"]'),
+        end('[data-align="end"]'),
+        center('[data-align="center"]');
+
+}
+
+.arrow {}
+
+.item {
+    -st-states: highlighted('[data-highlighted]'),
+        disabled('[data-disabled]');
+}
+
+.group {}
+
+.label {}
+
+.checkboxItem {
+    -st-states: checked('[data-state="checked"]'),
+        unchecked('[data-state="unchecked"]'),
+        highlighted('[data-highlighted]'),
+        disabled('[data-disabled]');
+}
+
+.radioGroup {}
+
+.radioItem {
+    -st-states: checked('[data-state="checked"]'),
+        unchecked('[data-state="unchecked"]'),
+        highlighted('[data-highlighted]'),
+        disabled('[data-disabled]');
+}
+
+.itemIndicator {
+    -st-states: checked('[data-state="checked"]'),
+        unchecked('[data-state="unchecked"]');
+}
+
+.separator {}
+
+.sub {}
+
+.subTrigger {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]'),
+        highlighted('[data-highlighted]'),
+        disabled('[data-disabled]');
+}
+
+.subContent {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]'),
+
+        left('[data-side="left"]'),
+        right('[data-side="right"]'),
+        bottom('[data-side="bottom"]'),
+        top('[data-side="top"]'),
+
+        start('[data-align="start"]'),
+        end('[data-align="end"]'),
+        center('[data-align="center"]');
+}

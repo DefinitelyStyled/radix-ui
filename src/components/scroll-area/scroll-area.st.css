@@ -1,0 +1,17 @@
+.root {}
+
+.viewport {}
+
+.scrollbar {
+  -st-states: visible('[data-state="visible"]'),
+    hidden('[data-state="hidden"]'),
+    vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]');
+}
+
+.thumb {
+  -st-states: visible('[data-state="visible"]'),
+    hidden('[data-state="hidden"]');
+}
+
+.corner {}

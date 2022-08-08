@@ -1,6 +1,32 @@
 .root {
+    -st-states: vertical('[data-orientation="vertical"]'),
+        horizontal('[data-orientation="horizontal"]');
     display: flex;
     min-width: max-content;
+}
+
+.button {
+    -st-states: vertical('[data-orientation="vertical"]'),
+        horizontal('[data-orientation="horizontal"]');
+}
+
+.link {}
+
+.toggleGroup {
+    -st-states: vertical('[data-orientation="vertical"]'),
+        horizontal('[data-orientation="horizontal"]');
+}
+
+.toggleItem {
+    -st-states: on('[data-state="on"]'),
+        vertical('[data-orientation="vertical"]'),
+        horizontal('[data-orientation="horizontal"]');
+    -st-mixin: itemStyle;
+}
+
+.separator {
+    -st-states: vertical('[data-orientation="vertical"]'),
+        horizontal('[data-orientation="horizontal"]');
 }
 
 .itemStyle {
@@ -13,8 +39,6 @@
     justify-content: center;
 }
 
-.itemStyle:hover {}
-
 .itemStyle:focus {
     position: relative;
 }
@@ -22,18 +46,6 @@
 .toggleGroup {
     display: inline-flex;
 }
-
-.toggleItem {
-    -st-states: state-on("[data-state=on]");
-    -st-mixin: itemStyle;
-
-}
-
-.toggleItem:state-on {}
-
-.toggleItem:first-child {}
-
-.icon {}
 
 .separator {
     width: 1px;

@@ -1,0 +1,11 @@
+.root {
+  -st-states: checked('[data-state="checked"]'),
+    unchecked('[data-state="unchecked"]'),
+    disabled('[data-disabled]');
+}
+
+.thumb {
+  -st-states: checked('[data-state="checked"]'),
+    unchecked('[data-state="unchecked"]'),
+    disabled('[data-disabled]');
+}

@@ -1,0 +1,5 @@
+.root {
+  -st-states: on('[data-state="on"]'),
+    off('[data-state="off"]'),
+    disabled('[data-disabled]');
+}

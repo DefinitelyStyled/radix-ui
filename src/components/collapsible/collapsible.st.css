@@ -1,0 +1,20 @@
+.root {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]'),
+        disabled('[data-state="disabled"]');
+}
+
+.trigger {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]'),
+        disabled('[data-state="disabled"]');
+}
+
+@property st-global(--radix-collapsible-content-width);
+@property st-global(--radix-collapsible-content-height);
+
+.content {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]'),
+        disabled('[data-state="disabled"]');
+}

@@ -1,7 +1,10 @@
 .root {}
 
 .item {
-    overflow: hidden;
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]'),
+        disabled('[data-disabled]');
+    overflow: hidden
 }
 
 
@@ -11,12 +14,17 @@
 }
 
 .header {
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]'),
+        disabled('[data-disabled]');
     all: unset;
     display: flex;
 }
 
 .trigger {
-    -st-states: closed('[data-state="closed"]'), open('[data-state="open"]');
+    -st-states: open('[data-state="open"]'),
+        closed('[data-state="closed"]'),
+        disabled('[data-disabled]');
     all: unset;
     height: 45px;
     flex: 1;
@@ -26,9 +34,11 @@
     line-height: 1px;
 }
 
+@property st-global(--radix-accordion-content-width);
+@property st-global(--radix-accordion-content-height);
 
 .content {
     -st-states: open('[data-state="open"]'),
-        closed('data-state="closed"'),
-        disabled('data-disabled');
+        closed('[data-state="closed"]'),
+        disabled('[data-disabled]');
 }

@@ -1,0 +1,23 @@
+.root {
+  -st-states: disabled('[data-disabled]'),
+    vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]');
+}
+
+.track {
+  -st-states: disabled('[data-disabled]'),
+    vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]');
+}
+
+.range {
+  -st-states: disabled('[data-disabled]'),
+    vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]');
+}
+
+.thumb {
+  -st-states: disabled('[data-disabled]'),
+    vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]');
+}
