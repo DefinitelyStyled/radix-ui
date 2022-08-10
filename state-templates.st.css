@@ -1,0 +1,54 @@
+.root {
+-st-states: 
+
+    open('[data-state="open"]'),
+    closed('[data-state="closed"]'),
+
+    checked('[data-state="checked"]'),
+    unchecked('[data-state="unchecked"]'),
+    
+    on('[data-state="on"]'),
+    off('[data-state="off"]'),
+
+    visible('[data-state="visible"]'),
+    hidden('[data-state="hidden"]'),
+
+    disabled('[data-disabled]'),
+
+    highlighted('[data-highlighted]'),
+
+    vertical('[data-orientation="vertical"]'),
+    horizontal('[data-orientation="horizontal"]'),
+
+    start('[data-align="start"]'),
+    end('[data-align="end"]'),
+    center('[data-align="center"]'),
+
+    left('[data-side="left"]'),
+    right('[data-side="right"]'),
+    bottom('[data-side="bottom"]'),
+    top('[data-side="top"]'),
+
+    start('[data-swipe="start"]'),
+    move('[data-swipe="move"]'),
+    cancel('[data-swipe="cancel"]'),
+    end('[data-swipe="end"]'),
+
+    up('[data-swipe-direction="up"]'),
+    down('[data-swipe-direction="down"]'),
+    left('[data-swipe-direction="left"]'),
+    right('[data-swipe-direction="right"]'),
+
+    to-start('[data-motion="to-start"]'),
+    to-end('[data-motion="to-end"]'),
+    from-start('[data-motion="from-start"]'),
+    from-end('[data-motion="from-end"]'),
+
+    active('[data-state="active"]'),
+    inactive('[data-state="inactive"]'),
+    
+    closed('[data-state="closed"]'),
+    delayed-open('[data-state="delayed-open"]'),
+    instant-open('[data-state="instant-open"]');
+
+}
