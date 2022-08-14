@@ -1,12 +1,30 @@
+import React from 'react';
 import * as RadixToggleGroup from '@radix-ui/react-toggle-group';
 import { st, classes } from './toggle-group.st.css';
 
-export const ToggleGroup: React.FC<
-    RadixToggleGroup.ToggleGroupSingleProps | RadixToggleGroup.ToggleGroupMultipleProps
-> = (props) => <RadixToggleGroup.Root {...props} className={st(classes.root, props.className)} />;
+export const ToggleGroup: typeof RadixToggleGroup.Root = React.forwardRef(function ToggleGroup(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixToggleGroup.Root
+            ref={forwardRef}
+            {...props}
+            className={st(classes.root, props.className)}
+        />
+    );
+});
 
-export const ToggleGroupItem: React.FC<RadixToggleGroup.ToggleGroupItemProps> = (props) => (
-    <RadixToggleGroup.Item {...props} className={st(classes.item, props.className)} />
+export const ToggleGroupItem: typeof RadixToggleGroup.Item = React.forwardRef(
+    function ToggleGroupItem(props, forwardRef) {
+        return (
+            <RadixToggleGroup.Item
+                ref={forwardRef}
+                {...props}
+                className={st(classes.root, props.className)}
+            />
+        );
+    }
 );
 
 /* 

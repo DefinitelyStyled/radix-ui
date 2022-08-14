@@ -1,3 +1,4 @@
+import React from 'react';
 import * as RadixSelect from '@radix-ui/react-select';
 import { st, classes } from './select.st.css';
 
@@ -5,68 +6,173 @@ export const Select: React.FC<RadixSelect.SelectProps> = (props) => (
     <RadixSelect.Root {...props} className={st(classes.root, props.className)} />
 );
 
-export const SelectTrigger: React.FC<RadixSelect.SelectTriggerProps> = (props) => (
-    <RadixSelect.Trigger {...props} className={st(classes.trigger, props.className)} />
-);
+export const SelectTrigger: typeof RadixSelect.Trigger = React.forwardRef(function SelectTrigger(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixSelect.Trigger
+            ref={forwardRef}
+            {...props}
+            className={st(classes.trigger, props.className)}
+        />
+    );
+});
 
-export const SelectValue: React.FC<RadixSelect.SelectValueProps> = (props) => (
-    <RadixSelect.Value {...props} className={st(classes.value, props.className)} />
-);
+export const SelectValue: typeof RadixSelect.Value = React.forwardRef(function SelectValue(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixSelect.Value
+            ref={forwardRef}
+            {...props}
+            className={st(classes.value, props.className)}
+        />
+    );
+});
 
-export const SelectIcon: React.FC<RadixSelect.SelectIconProps> = (props) => (
-    <RadixSelect.Icon {...props} className={st(classes.icon, props.className)} />
-);
+export const SelectIcon: typeof RadixSelect.Icon = React.forwardRef(function SelectIcon(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixSelect.Icon
+            ref={forwardRef}
+            {...props}
+            className={st(classes.icon, props.className)}
+        />
+    );
+});
 
 export const SelectPortal: React.FC<RadixSelect.SelectPortalProps> = (props) => (
     <RadixSelect.Portal {...props} className={st(classes.portal, props.className)} />
 );
 
-export const SelectContent: React.FC<RadixSelect.SelectContentProps> = (props) => (
-    <RadixSelect.Content {...props} className={st(classes.content, props.className)} />
+export const SelectContent: typeof RadixSelect.Content = React.forwardRef(function SelectContent(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixSelect.Content
+            ref={forwardRef}
+            {...props}
+            className={st(classes.content, props.className)}
+        />
+    );
+});
+
+export const SelectViewport: typeof RadixSelect.Viewport = React.forwardRef(function SelectViewport(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixSelect.Viewport
+            ref={forwardRef}
+            {...props}
+            className={st(classes.viewport, props.className)}
+        />
+    );
+});
+
+export const SelectItem: typeof RadixSelect.Item = React.forwardRef(function SelectItem(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixSelect.Item
+            ref={forwardRef}
+            {...props}
+            className={st(classes.item, props.className)}
+        />
+    );
+});
+
+export const SelectItemText: typeof RadixSelect.ItemText = React.forwardRef(function SelectItemText(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixSelect.ItemText
+            ref={forwardRef}
+            {...props}
+            className={st(classes.itemText, props.className)}
+        />
+    );
+});
+
+export const SelectItemIndicator: typeof RadixSelect.ItemIndicator = React.forwardRef(
+    function SelectItemIndicator(props, forwardRef) {
+        return (
+            <RadixSelect.ItemIndicator
+                ref={forwardRef}
+                {...props}
+                className={st(classes.itemIndicator, props.className)}
+            />
+        );
+    }
 );
 
-export const SelectViewport: React.FC<RadixSelect.SelectViewportProps> = (props) => (
-    <RadixSelect.Viewport {...props} className={st(classes.viewport, props.className)} />
+export const SelectScrollUpButton: typeof RadixSelect.ScrollUpButton = React.forwardRef(
+    function SelectScrollUpButton(props, forwardRef) {
+        return (
+            <RadixSelect.ScrollUpButton
+                ref={forwardRef}
+                {...props}
+                className={st(classes.scrollUpButton, props.className)}
+            />
+        );
+    }
 );
 
-export const SelectItem: React.FC<RadixSelect.SelectItemProps> = (props) => (
-    <RadixSelect.Item {...props} className={st(classes.item, props.className)} />
+export const SelectScrollDownButton: typeof RadixSelect.ScrollDownButton = React.forwardRef(
+    function SelectScrollDownButton(props, forwardRef) {
+        return (
+            <RadixSelect.ScrollDownButton
+                ref={forwardRef}
+                {...props}
+                className={st(classes.scrollDownButton, props.className)}
+            />
+        );
+    }
 );
 
-export const SelectItemText: React.FC<RadixSelect.SelectItemTextProps> = (props) => (
-    <RadixSelect.ItemText {...props} className={st(classes.itemText, props.className)} />
-);
+export const SelectGroup: typeof RadixSelect.Group = React.forwardRef(function SelectGroup(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixSelect.Group
+            ref={forwardRef}
+            {...props}
+            className={st(classes.group, props.className)}
+        />
+    );
+});
 
-export const SelectItemIndicator: React.FC<RadixSelect.SelectItemIndicatorProps> = (props) => (
-    <RadixSelect.ItemIndicator {...props} className={st(classes.itemIndicator, props.className)} />
-);
+export const SelectLabel: typeof RadixSelect.Label = React.forwardRef(function SelectLabel(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixSelect.Label
+            ref={forwardRef}
+            {...props}
+            className={st(classes.label, props.className)}
+        />
+    );
+});
 
-export const SelectScrollUpButton: React.FC<RadixSelect.SelectScrollUpButtonProps> = (props) => (
-    <RadixSelect.ScrollUpButton
-        {...props}
-        className={st(classes.scrollUpButton, props.className)}
-    />
-);
-
-export const SelectScrollDownButton: React.FC<RadixSelect.SelectScrollDownButtonProps> = (
-    props
-) => (
-    <RadixSelect.ScrollDownButton
-        {...props}
-        className={st(classes.scrollDownButton, props.className)}
-    />
-);
-
-export const SelectGroup: React.FC<RadixSelect.SelectGroupProps> = (props) => (
-    <RadixSelect.Group {...props} className={st(classes.group, props.className)} />
-);
-
-export const SelectLabel: React.FC<RadixSelect.SelectLabelProps> = (props) => (
-    <RadixSelect.Label {...props} className={st(classes.label, props.className)} />
-);
-
-export const SelectSeparator: React.FC<RadixSelect.SelectSeparatorProps> = (props) => (
-    <RadixSelect.Separator {...props} className={st(classes.separator, props.className)} />
+export const SelectSeparator: typeof RadixSelect.Separator = React.forwardRef(
+    function SelectSeparator(props, forwardRef) {
+        return (
+            <RadixSelect.Separator
+                ref={forwardRef}
+                {...props}
+                className={st(classes.separator, props.className)}
+            />
+        );
+    }
 );
 
 /* 

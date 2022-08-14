@@ -1,16 +1,43 @@
+import React from 'react';
 import * as RadixRadioGroup from '@radix-ui/react-radio-group';
 import { st, classes } from './radio-group.st.css';
 
-export const RadioGroup: React.FC<RadixRadioGroup.RadioGroupProps> = (props) => (
-    <RadixRadioGroup.Root {...props} className={st(classes.root, props.className)} />
-);
+export const RadioGroup: typeof RadixRadioGroup.Root = React.forwardRef(function RadioGroup(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixRadioGroup.Root
+            ref={forwardRef}
+            {...props}
+            className={st(classes.root, props.className)}
+        />
+    );
+});
 
-export const RadioGroupItem: React.FC<RadixRadioGroup.RadioGroupItemProps> = (props) => (
-    <RadixRadioGroup.Item {...props} className={st(classes.item, props.className)} />
-);
+export const RadioGroupItem: typeof RadixRadioGroup.Item = React.forwardRef(function RadioGroupItem(
+    props,
+    forwardRef
+) {
+    return (
+        <RadixRadioGroup.Item
+            ref={forwardRef}
+            {...props}
+            className={st(classes.item, props.className)}
+        />
+    );
+});
 
-export const RadioGroupIndicator: React.FC<RadixRadioGroup.RadioGroupIndicatorProps> = (props) => (
-    <RadixRadioGroup.Indicator {...props} className={st(classes.indicator, props.className)} />
+export const RadioGroupIndicator: typeof RadixRadioGroup.Indicator = React.forwardRef(
+    function RadioGroupIndicator(props, forwardRef) {
+        return (
+            <RadixRadioGroup.Indicator
+                ref={forwardRef}
+                {...props}
+                className={st(classes.indicator, props.className)}
+            />
+        );
+    }
 );
 
 /* 

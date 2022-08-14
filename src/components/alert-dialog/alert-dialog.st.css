@@ -17,10 +17,10 @@
         closed('[data-state="closed"]');
 }
 
-.title {}
-
-.description {}
-
 .cancel {}
 
 .action {}
+
+.title {}
+
+.description {}
