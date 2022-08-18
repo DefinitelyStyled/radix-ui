@@ -3,7 +3,7 @@ import * as RadixDropdownMenu from '@radix-ui/react-dropdown-menu';
 import { st, classes } from './dropdown-menu.st.css';
 
 export const DropdownMenu: React.FC<RadixDropdownMenu.DropdownMenuProps> = (props) => (
-    <RadixDropdownMenu.Root {...props} className={st(classes.root, props.className)} />
+    <RadixDropdownMenu.Root {...props} />
 );
 
 export const DropdownMenuTrigger: typeof RadixDropdownMenu.Trigger = React.forwardRef(
@@ -119,7 +119,7 @@ export const DropdownMenuRadioItem: typeof RadixDropdownMenu.RadioItem = React.f
 );
 
 export const DropdownMenuSub: React.FC<RadixDropdownMenu.DropdownMenuSubProps> = (props) => (
-    <RadixDropdownMenu.Sub {...props} className={st(classes.sub, props.className)} />
+    <RadixDropdownMenu.Sub {...props} />
 );
 
 export const DropdownMenuSubTrigger: typeof RadixDropdownMenu.SubTrigger = React.forwardRef(

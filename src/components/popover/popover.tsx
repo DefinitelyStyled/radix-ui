@@ -3,7 +3,7 @@ import * as RadixPopover from '@radix-ui/react-popover';
 import { st, classes } from './popover.st.css';
 
 export const Popover: React.FC<RadixPopover.PopoverProps> = (props) => (
-    <RadixPopover.Root {...props} className={st(classes.root, props.className)} />
+    <RadixPopover.Root {...props} />
 );
 
 export const PopoverTrigger: typeof RadixPopover.Trigger = React.forwardRef(function PopoverTrigger(

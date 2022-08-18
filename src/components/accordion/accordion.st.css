@@ -4,7 +4,7 @@
     -st-states: open('[data-state="open"]'),
         closed('[data-state="closed"]'),
         disabled('[data-disabled]');
-    overflow: hidden
+    overflow: hidden;
 }
 
 

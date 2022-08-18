@@ -1,4 +1,7 @@
-.root {}
+.root {
+    /* TODO: NOT APPLIED */
+    -st-global: ' ';
+}
 
 .trigger {
     -st-states: open('[data-state="open"]'),
@@ -58,7 +61,10 @@
 
 .separator {}
 
-.sub {}
+.sub {
+    /* TODO: NOT APPLIED - SHOULD BE PRIVATE */
+    /* -st-global: ' '; */
+}
 
 .subTrigger {
     -st-states: open('[data-state="open"]'),

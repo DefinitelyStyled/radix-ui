@@ -7,7 +7,7 @@ export const TooltipProvider: React.FC<RadixTooltip.TooltipProviderProps> = (pro
 );
 
 export const Tooltip: React.FC<RadixTooltip.TooltipProps> = (props) => (
-    <RadixTooltip.Root {...props} className={st(classes.root, props.className)} />
+    <RadixTooltip.Root {...props} />
 );
 
 export const TooltipTrigger: typeof RadixTooltip.Trigger = React.forwardRef(function TooltipTrigger(

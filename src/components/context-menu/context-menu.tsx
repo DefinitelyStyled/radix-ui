@@ -3,7 +3,7 @@ import * as RadixContextMenu from '@radix-ui/react-context-menu';
 import { st, classes } from './context-menu.st.css';
 
 export const ContextMenu: React.FC<RadixContextMenu.ContextMenuProps> = (props) => (
-    <RadixContextMenu.Root {...props} className={st(classes.root, props.className)} />
+    <RadixContextMenu.Root {...props} />
 );
 
 export const ContextMenuTrigger: typeof RadixContextMenu.Trigger = React.forwardRef(
@@ -143,7 +143,7 @@ export const ContextMenuSeparator: typeof RadixContextMenu.Separator = React.for
 );
 
 export const ContextMenuSub: React.FC<RadixContextMenu.ContextMenuSubProps> = (props) => (
-    <RadixContextMenu.Sub {...props} className={st(classes.sub, props.className)} />
+    <RadixContextMenu.Sub {...props} />
 );
 
 export const ContextMenuSubTrigger: typeof RadixContextMenu.SubTrigger = React.forwardRef(

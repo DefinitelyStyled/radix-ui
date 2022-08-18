@@ -3,7 +3,7 @@ import * as RadixHoverCard from '@radix-ui/react-hover-card';
 import { st, classes } from './hover-card.st.css';
 
 export const HoverCard: React.FC<RadixHoverCard.HoverCardProps> = (props) => (
-    <RadixHoverCard.Root {...props} className={st(classes.root, props.className)} />
+    <RadixHoverCard.Root {...props} />
 );
 
 export const HoverCardTrigger: typeof RadixHoverCard.Trigger = React.forwardRef(

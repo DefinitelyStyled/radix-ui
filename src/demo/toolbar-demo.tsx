@@ -11,7 +11,7 @@ import {
 } from '@radix-ui/react-icons';
 import {
     ToolbarLink,
-    ToolbarRoot,
+    Toolbar,
     ToolbarSeparator,
     ToolbarToggleGroup,
     ToolbarToggleItem,
@@ -23,7 +23,7 @@ export interface ToolbarProps {
 
 export const ToolbarDemo: React.FC<ToolbarProps> = ({ className }) => {
     return (
-        <ToolbarRoot className={className} aria-label="Formatting options">
+        <Toolbar className={className} aria-label="Formatting options">
             <ToolbarToggleGroup type="multiple" aria-label="Text formatting">
                 <ToolbarToggleItem value="bold" aria-label="Bold">
                     <FontBoldIcon />
@@ -50,6 +50,6 @@ export const ToolbarDemo: React.FC<ToolbarProps> = ({ className }) => {
             <ToolbarSeparator />
             <ToolbarLink href="#">Edited 2 hours ago</ToolbarLink>
             <RadixToolbar.Button>Share</RadixToolbar.Button>
-        </ToolbarRoot>
+        </Toolbar>
     );
 };

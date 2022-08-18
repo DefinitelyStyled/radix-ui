@@ -3,7 +3,7 @@ import * as RadixAlertDialog from '@radix-ui/react-alert-dialog';
 import { st, classes } from './alert-dialog.st.css';
 
 export const AlertDialog: typeof RadixAlertDialog.Root = function AlertDialog(props) {
-    return <RadixAlertDialog.Root {...props} className={st(classes.root, props.className)} />;
+    return <RadixAlertDialog.Root {...props} />;
 };
 
 export const AlertDialogTrigger: typeof RadixAlertDialog.Trigger = React.forwardRef(
@@ -99,7 +99,7 @@ export const AlertDialogDescription: typeof RadixAlertDialog.Description = React
 /*
 <AlertDialog.Root>
     <AlertDialog.Trigger />
-        <AlertDialog.Portal>
+    <AlertDialog.Portal>
         <AlertDialog.Overlay />
         <AlertDialog.Content>
             <AlertDialog.Title />

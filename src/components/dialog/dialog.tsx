@@ -2,9 +2,7 @@ import React from 'react';
 import * as RadixDialog from '@radix-ui/react-dialog';
 import { st, classes } from './dialog.st.css';
 
-export const Dialog: React.FC<RadixDialog.DialogProps> = (props) => (
-    <RadixDialog.Root {...props} className={st(classes.root, props.className)} />
-);
+export const Dialog: React.FC<RadixDialog.DialogProps> = (props) => <RadixDialog.Root {...props} />;
 
 export const DialogTrigger: typeof RadixDialog.Trigger = React.forwardRef(function DialogTrigger(
     props,

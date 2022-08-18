@@ -2,9 +2,7 @@ import React from 'react';
 import * as RadixSelect from '@radix-ui/react-select';
 import { st, classes } from './select.st.css';
 
-export const Select: React.FC<RadixSelect.SelectProps> = (props) => (
-    <RadixSelect.Root {...props} className={st(classes.root, props.className)} />
-);
+export const Select: React.FC<RadixSelect.SelectProps> = (props) => <RadixSelect.Root {...props} />;
 
 export const SelectTrigger: typeof RadixSelect.Trigger = React.forwardRef(function SelectTrigger(
     props,
