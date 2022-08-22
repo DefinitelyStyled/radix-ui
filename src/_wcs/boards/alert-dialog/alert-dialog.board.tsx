@@ -5,7 +5,8 @@ import {
     AlertDialogOverlay,
     AlertDialogContent,
     AlertDialogTitle,
-    AlertDialogCancel, AlertDialogDescription,
+    AlertDialogCancel,
+    AlertDialogDescription,
 } from '../../../components/alert-dialog/alert-dialog';
 import { classes } from '../../../theme/theme.st.css';
 import { classes as commonClasses } from '../../../common.st.css';
@@ -19,12 +20,9 @@ export default createBoard({
             <AlertDialogTrigger>Trigger!</AlertDialogTrigger>
             <AlertDialogOverlay />
             <AlertDialogContent>
-                <AlertDialogTitle>ALERT!</AlertDialogTitle>
-                x
-                <AlertDialogDescription>
-                    XXX
-                </AlertDialogDescription>
-                <AlertDialogCancel>OH NO THEY CANCELLED ME</AlertDialogCancel>
+                <AlertDialogTitle>Alert Title</AlertDialogTitle>
+                <AlertDialogDescription>Alert description can go here.</AlertDialogDescription>
+                <AlertDialogCancel>Cancel button</AlertDialogCancel>
             </AlertDialogContent>
         </AlertDialog>
     ),
