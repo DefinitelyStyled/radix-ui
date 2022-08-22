@@ -2,6 +2,7 @@
 @st-import AlertDialog from "../components/alert-dialog/alert-dialog.st.css";
 @st-import AspectRatio from "../components/aspect-ratio/aspect-ratio.st.css";
 @st-import Avatar from "../components/avatar/avatar.st.css";
+@st-import Checkbox from "../components/checkbox/checkbox.st.css";
 @st-import [--blackA7, --blackA9, --mauve12] from "../common.st.css";
 
 @st-scope .root {
@@ -89,4 +90,16 @@
         background-color: grey;
         border-radius: 50%;
     }
+
+    Checkbox {
+        width: 25px;
+        height: 25px;
+    }
+
+    Checkbox:checked {
+
+        background-color: greenyellow;
+    }
+
+    Checkbox::indicator {}
 }
