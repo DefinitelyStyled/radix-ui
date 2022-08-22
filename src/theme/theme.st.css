@@ -1,6 +1,7 @@
 @st-import Accordion from "../components/accordion/accordion.st.css";
 @st-import AlertDialog from "../components/alert-dialog/alert-dialog.st.css";
 @st-import AspectRatio from "../components/aspect-ratio/aspect-ratio.st.css";
+@st-import Avatar from "../components/avatar/avatar.st.css";
 @st-import [--blackA7, --blackA9, --mauve12] from "../common.st.css";
 
 @st-scope .root {
@@ -73,5 +74,19 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+    }
+
+    Avatar {}
+
+    Avatar::image {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    Avatar::fallback {
+        background-color: grey;
+        border-radius: 50%;
     }
 }
