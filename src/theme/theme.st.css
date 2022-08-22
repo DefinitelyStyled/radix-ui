@@ -4,6 +4,7 @@
 @st-import Avatar from "../components/avatar/avatar.st.css";
 @st-import Checkbox from "../components/checkbox/checkbox.st.css";
 @st-import Collapsible from "../components/collapsible/collapsible.st.css";
+@st-import ContextMenu from "../components/context-menu/context-menu.st.css";
 @st-import [--blackA7, --blackA9, --mauve12] from "../common.st.css";
 
 @st-scope .root {
@@ -106,5 +107,7 @@
 
     Collapsible {}
 
-
+    ContextMenu::content {
+        background-color: lightblue;
+    }
 }
