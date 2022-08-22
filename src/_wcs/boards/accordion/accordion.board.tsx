@@ -5,7 +5,7 @@ import {
     AccordionHeader,
     AccordionTrigger,
     AccordionContent,
-} from '../../components/accordion/accordion';
+} from '../../../components/accordion/accordion';
 
 export default createBoard({
     name: 'Accordion',

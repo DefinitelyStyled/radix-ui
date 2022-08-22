@@ -1,6 +1,7 @@
-@st-import AlertDialog from "../components/alert-dialog/alert-dialog.st.css";
 @st-import Accordion from "../components/accordion/accordion.st.css";
-@st-import [--blackA9, --mauve12] from "../common.st.css";
+@st-import AlertDialog from "../components/alert-dialog/alert-dialog.st.css";
+@st-import AspectRatio from "../components/aspect-ratio/aspect-ratio.st.css";
+@st-import [--blackA7, --blackA9, --mauve12] from "../common.st.css";
 
 @st-scope .root {
 
@@ -64,5 +65,13 @@
         background-color: gold;
         width: 200px;
         height: 100px;
+    }
+
+    AspectRatio {}
+
+    AspectRatio img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 }
