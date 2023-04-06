@@ -1,16 +1,12 @@
 @st-import Toolbar from "./components/toolbar/toolbar.st.css";
 @st-import Accordion from "./components/accordion/accordion.st.css";
 @st-import AspectRatio from "./components/aspect-ratio/aspect-ratio.st.css";
+@st-import Avatar from "./components/avatar/avatar.st.css";
 
-.root {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.root {}
 
 .compSection {
-    min-width: 300px;
+    max-width: 500px;
     border-radius: 6px;
     background: hsl(0, 0%, 30%);
     padding: 1em;
@@ -18,20 +14,22 @@
 }
 
 .compTitle {
-    margin: 0;
     color: white;
+    margin: 0 0 1em 0;
 }
 
 .toolbar {
     -st-extends: Toolbar;
-    margin: 1em 0;
 }
 
 .accordion {
     -st-extends: Accordion;
-    margin: 1em 0;
 }
 
 .aspectRatio {
     -st-extends: AspectRatio;
+}
+
+.avatar {
+    -st-extends: Avatar;
 }
