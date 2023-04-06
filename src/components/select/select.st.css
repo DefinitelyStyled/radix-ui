@@ -1,13 +1,11 @@
 .root {
   /* TODO: NOT APPLIED */
-  -st-global: ' ';
+  -st-global: '* ';
 }
 
 .trigger {
-  -st-states: open('[data-state="open"]'),
-    closed('[data-state="closed"]'),
-    disabled('[data-disabled]'),
-    placeholder('[data-placeholder]');
+  -st-states: open('[data-state="open"]'), closed('[data-state="closed"]'),
+              disabled('[data-disabled]'), placeholder('[data-placeholder]');
 }
 
 .value {}
@@ -17,17 +15,15 @@
 .portal {}
 
 .content {
-  -st-states: open('[data-state="open"]'),
-    closed('[data-state="closed"]');
+  -st-states: open('[data-state="open"]'), closed('[data-state="closed"]');
 }
 
 .viewport {}
 
 .item {
   -st-states: checked('[data-state="checked"]'),
-    unchecked('[data-state="unchecked"]'),
-    highlighted('[data-highlighted]'),
-    disabled('[data-disabled]');
+              unchecked('[data-state="unchecked"]'),
+              highlighted('[data-highlighted]'), disabled('[data-disabled]');
 }
 
 .itemText {}

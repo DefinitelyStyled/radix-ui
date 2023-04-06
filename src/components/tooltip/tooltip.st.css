@@ -1,12 +1,12 @@
 .root {
   /* TODO: NOT APPLIED */
-  -st-global: ' ';
+  -st-global: '* ';
 }
 
 .trigger {
   -st-states: closed('[data-state="closed"]'),
-    delayed-open('[data-state="delayed-open"]'),
-    instant-open('[data-state="instant-open"]');
+              delayed-open('[data-state="delayed-open"]'),
+              instant-open('[data-state="instant-open"]');
 }
 
 .portal {}
@@ -15,17 +15,12 @@
 
 .content {
   -st-states: closed('[data-state="closed"]'),
-    delayed-open('[data-state="delayed-open"]'),
-    instant-open('[data-state="instant-open"]'),
-
-    left('[data-side="left"]'),
-    right('[data-side="right"]'),
-    bottom('[data-side="bottom"]'),
-    top('[data-side="top"]'),
-
-    start('[data-align="start"]'),
-    end('[data-align="end"]'),
-    center('[data-align="center"]');
+              delayed-open('[data-state="delayed-open"]'),
+              instant-open('[data-state="instant-open"]'),
+              left('[data-side="left"]'), right('[data-side="right"]'),
+              bottom('[data-side="bottom"]'), top('[data-side="top"]'),
+              start('[data-align="start"]'), end('[data-align="end"]'),
+              center('[data-align="center"]');
 }
 
 .arrow {}

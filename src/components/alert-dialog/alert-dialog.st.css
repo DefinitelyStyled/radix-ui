@@ -1,23 +1,20 @@
 .root {
     /* TODO: NOT APPLIED */
-    -st-global: ' ';
+    -st-global: '* ';
 }
 
 .trigger {
-    -st-states: open('[data-state="open"]'),
-        closed('[data-state="closed"]');
+    -st-states: open('[data-state="open"]'), closed('[data-state="closed"]');
 }
 
 .portal {}
 
 .overlay {
-    -st-states: open('[data-state="open"]'),
-        closed('[data-state="closed"]');
+    -st-states: open('[data-state="open"]'), closed('[data-state="closed"]');
 }
 
 .content {
-    -st-states: open('[data-state="open"]'),
-        closed('[data-state="closed"]');
+    -st-states: open('[data-state="open"]'), closed('[data-state="closed"]');
 }
 
 .cancel {}

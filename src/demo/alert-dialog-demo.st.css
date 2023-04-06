@@ -1,0 +1,68 @@
+@st-import [
+    --blackA7,
+    --mauve3,
+    --mauve4,
+    --mauve5,
+    --mauve7,
+    --mauve11,
+    --red4,
+    --red5,
+    --red7,
+    --red11,
+    --violet11
+] from '../common.st.css';
+
+.root {}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 500;
+    height: 35px;
+    cursor: pointer;
+}
+
+.violet {
+    background-color: white;
+    color: var(--violet11);
+    box-shadow: 0 2px 10px var(--blackA7);
+}
+
+.violet:hover {
+    background-color: var(--mauve3);
+}
+
+.violet:focus {
+    box-shadow: 0 0 0 2px black;
+}
+
+.red {
+    background-color: var(--red4);
+    color: var(--red11);
+}
+
+.red:hover {
+    background-color: var(--red5);
+}
+
+.red:focus {
+    box-shadow: 0 0 0 2px var(--red7);
+}
+
+.mauve {
+    background-color: var(--mauve4);
+    color: var(--mauve11);
+}
+
+.mauve:hover {
+    background-color: var(--mauve5);
+}
+
+.mauve:focus {
+    box-shadow: 0 0 0 2px var(--mauve7);
+}

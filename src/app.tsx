@@ -8,6 +8,7 @@ import { classes as darkTheme } from './theme/dark.st.css';
 import AccordionDemo from './demo/accordion-demo';
 import AspectRatioDemo from './demo/aspect-ratio-demo';
 import { AvatarDemo } from './demo/avatar-demo';
+import { AlertDialogDemo } from './demo/alert-dialog-demo';
 
 export interface AppProps {
     className?: string;
@@ -15,7 +16,7 @@ export interface AppProps {
 
 export const App: React.FC<AppProps> = ({ className }) => {
     return (
-        <main className={st(classes.root, commonClasses.root, className)}>
+        <main className={st(classes.root, className)}>
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Toolbar</h2>
                 <div>
@@ -44,6 +45,12 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 <h2 className={classes.compTitle}>Avatar</h2>
                 <div>
                     <AvatarDemo className={classes.avatar} />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Alert Dialog</h2>
+                <div>
+                    <AlertDialogDemo />
                 </div>
             </div>
         </main>

@@ -1,12 +1,11 @@
 @st-import Toolbar from "../components/toolbar/toolbar.st.css";
 @st-import ToolbarVariant from "../components/toolbar/toolbar.variant.st.css";
-
 @st-import Accordion from "../components/accordion/accordion.st.css";
 @st-import AccordionVariant from "../components/accordion/accordion.variant.st.css";
-
+@st-import AlertDialog from "../components/alert-dialog/alert-dialog.st.css";
+@st-import AlertDialogVariant from "../components/alert-dialog/alert-dialog.variant.st.css";
 @st-import AspectRatio from "../components/aspect-ratio/aspect-ratio.st.css";
 @st-import AspectRatioVariant from "../components/aspect-ratio/aspect-ratio.variant.st.css";
-
 @st-import Avatar from "../components/avatar/avatar.st.css";
 @st-import AvatarVariant from "../components/avatar/avatar.variant.st.css";
 
@@ -17,6 +16,10 @@
 
     Accordion {
         -st-mixin: AccordionVariant;
+    }
+
+    AlertDialog {
+        -st-mixin: AlertDialogVariant;
     }
 
     AspectRatio {

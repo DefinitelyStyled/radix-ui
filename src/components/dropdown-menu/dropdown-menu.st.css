@@ -1,12 +1,11 @@
 .root {
   /* TODO: NOT APPLIED */
-  -st-global: ' ';
+  -st-global: '* ';
 }
 
 .trigger {
-  -st-states: open('[data-state="open"]'),
-    closed('[data-state="closed"]'),
-    disabled('[data-disabled]');
+  -st-states: open('[data-state="open"]'), closed('[data-state="closed"]'),
+              disabled('[data-disabled]');
 }
 
 .portal {}
@@ -14,29 +13,21 @@
 @property st-global(--radix-hover-card-content-transform-origin);
 
 .content {
-  -st-states: open('[data-state="open"]'),
-    closed('[data-state="closed"]'),
-
-    left('[data-side="left"]'),
-    right('[data-side="right"]'),
-    bottom('[data-side="bottom"]'),
-    top('[data-side="top"]'),
-
-    start('[data-align="start"]'),
-    end('[data-align="end"]'),
-    center('[data-align="center"]'),
-
-    vertical('[data-orientation="vertical"]'),
-    horizontal('[data-orientation="horizontal"]');
+  -st-states: open('[data-state="open"]'), closed('[data-state="closed"]'),
+              left('[data-side="left"]'), right('[data-side="right"]'),
+              bottom('[data-side="bottom"]'), top('[data-side="top"]'),
+              start('[data-align="start"]'), end('[data-align="end"]'),
+              center('[data-align="center"]'),
+              vertical('[data-orientation="vertical"]'),
+              horizontal('[data-orientation="horizontal"]');
 }
 
 .arrow {}
 
 .item {
   -st-states: vertical('[data-orientation="vertical"]'),
-    horizontal('[data-orientation="horizontal"]'),
-    disabled('[data-disabled]'),
-    highlighted('[data-highlighted]');
+              horizontal('[data-orientation="horizontal"]'),
+              disabled('[data-disabled]'), highlighted('[data-highlighted]');
 }
 
 .group {}
@@ -45,51 +36,41 @@
 
 .checkboxItem {
   -st-states: checked('[data-state="checked"]'),
-    unchecked('[data-state="unchecked"]'),
-    disabled('[data-disabled]'),
-    highlighted('[data-highlighted]');
+              unchecked('[data-state="unchecked"]'),
+              disabled('[data-disabled]'), highlighted('[data-highlighted]');
 }
 
 .radioGroup {}
 
 .radioItem {
   -st-states: checked('[data-state="checked"]'),
-    unchecked('[data-state="unchecked"]'),
-    disabled('[data-disabled]'),
-    highlighted('[data-highlighted]');
+              unchecked('[data-state="unchecked"]'),
+              disabled('[data-disabled]'), highlighted('[data-highlighted]');
 }
 
 .itemIndicator {
   -st-states: checked('[data-state="checked"]'),
-    unchecked('[data-state="unchecked"]');
+              unchecked('[data-state="unchecked"]');
 }
 
 .separator {}
 
 .sub {
   /* TODO: NOT APPLIED - SHOULD BE PRIVATE */
-  /* -st-global: ' '; */
+  /* -st-global: '* '; */
 }
 
 .subTrigger {
-  -st-states: open('[data-state="open"]'),
-    closed('[data-state="closed"]'),
-    disabled('[data-disabled]');
+  -st-states: open('[data-state="open"]'), closed('[data-state="closed"]'),
+              disabled('[data-disabled]');
 }
 
 .subContent {
-  -st-states: open('[data-state="open"]'),
-    closed('[data-state="closed"]'),
-
-    left('[data-side="left"]'),
-    right('[data-side="right"]'),
-    bottom('[data-side="bottom"]'),
-    top('[data-side="top"]'),
-
-    start('[data-align="start"]'),
-    end('[data-align="end"]'),
-    center('[data-align="center"]'),
-
-    vertical('[data-orientation="vertical"]'),
-    horizontal('[data-orientation="horizontal"]');
+  -st-states: open('[data-state="open"]'), closed('[data-state="closed"]'),
+              left('[data-side="left"]'), right('[data-side="right"]'),
+              bottom('[data-side="bottom"]'), top('[data-side="top"]'),
+              start('[data-align="start"]'), end('[data-align="end"]'),
+              center('[data-align="center"]'),
+              vertical('[data-orientation="vertical"]'),
+              horizontal('[data-orientation="horizontal"]');
 }
