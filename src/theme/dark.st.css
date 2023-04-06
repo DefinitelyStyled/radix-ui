@@ -47,7 +47,8 @@
     --violet10,
     --violet11,
     --violet12,
-    --white
+    --white,
+    --black
 ] from "../common.st.css";
 
 .root {
@@ -102,4 +103,5 @@
 
     /* --white: hsl(0, 0%, 100%); */
     --white: hsl(0, 0%, 10%);
+    --black: hsl(0, 0%, 100%);
 }

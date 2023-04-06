@@ -15,6 +15,7 @@ import {
     ToolbarSeparator,
     ToolbarToggleGroup,
     ToolbarToggleItem,
+    ToolbarButton,
 } from '../components/toolbar/toolbar';
 
 export interface ToolbarProps {
@@ -49,7 +50,7 @@ export const ToolbarDemo: React.FC<ToolbarProps> = ({ className }) => {
             </ToolbarToggleGroup>
             <ToolbarSeparator />
             <ToolbarLink href="#">Edited 2 hours ago</ToolbarLink>
-            <RadixToolbar.Button>Share</RadixToolbar.Button>
+            <ToolbarButton>Share</ToolbarButton>
         </Toolbar>
     );
 };

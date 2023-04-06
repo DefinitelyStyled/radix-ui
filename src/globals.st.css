@@ -1,6 +1,6 @@
 :global(*),
-:global(::before),
-:global(::after) {
+:global(::after),
+:global(::before) {
   box-sizing: border-box;
 }
 
@@ -8,6 +8,10 @@
 :global(body) {
   margin: 0;
   padding: 0;
+}
+
+:global(button) {
+  all: unset;
 }
 
 :global(html) {

@@ -7,11 +7,15 @@
 .root {}
 
 .compSection {
-    max-width: 500px;
+    width: 500px;
     border-radius: 6px;
     background: hsl(0, 0%, 30%);
     padding: 1em;
     margin: 1em;
+}
+
+.themedSection {
+    margin-top: 1em;
 }
 
 .compTitle {
