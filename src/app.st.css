@@ -3,6 +3,7 @@
 @st-import AlertDialog from "./components/alert-dialog/alert-dialog.st.css";
 @st-import AspectRatio from "./components/aspect-ratio/aspect-ratio.st.css";
 @st-import Avatar from "./components/avatar/avatar.st.css";
+@st-import Checkbox from "./components/checkbox/checkbox.st.css";
 
 .root {}
 
@@ -23,12 +24,12 @@
     margin: 0 0 1em 0;
 }
 
-.toolbar {
-    -st-extends: Toolbar;
-}
-
 .accordion {
     -st-extends: Accordion;
+}
+
+.alertDialog {
+    -st-extends: AlertDialog;
 }
 
 .aspectRatio {
@@ -39,6 +40,10 @@
     -st-extends: Avatar;
 }
 
-.alertDialog {
-    -st-extends: AlertDialog;
+.checkbox {
+    -st-extends: Checkbox;
+}
+
+.toolbar {
+    -st-extends: Toolbar;
 }

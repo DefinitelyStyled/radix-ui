@@ -8,6 +8,8 @@
 @st-import AspectRatioVariant from "../components/aspect-ratio/aspect-ratio.variant.st.css";
 @st-import Avatar from "../components/avatar/avatar.st.css";
 @st-import AvatarVariant from "../components/avatar/avatar.variant.st.css";
+@st-import Checkbox from "../components/checkbox/checkbox.st.css";
+@st-import CheckboxVariant from "../components/checkbox/checkbox.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -28,5 +30,9 @@
 
     Avatar {
         -st-mixin: AvatarVariant;
+    }
+
+    Checkbox {
+        -st-mixin: CheckboxVariant;
     }
 }

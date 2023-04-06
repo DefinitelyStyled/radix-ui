@@ -1,0 +1,28 @@
+@st-import [--blackA7, --violet3, --violet11, --white, --black] from '../../common.st.css';
+@st-import Checkbox from './checkbox.st.css';
+
+.root {
+    -st-extends: Checkbox;
+    background-color: var(--white);
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px var(--blackA7);
+}
+
+.root:hover {
+    background-color: var(--violet3);
+}
+
+.root:focus {
+    box-shadow: 0 0 0 2px var(--black);
+}
+
+.root::indicator {
+    color: var(--violet11);
+}
+
+

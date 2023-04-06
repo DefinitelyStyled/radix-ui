@@ -1,5 +1,4 @@
 import type React from 'react';
-import { classes as commonClasses } from './common.st.css';
 import { st, classes } from './app.st.css';
 import { ToolbarDemo } from './demo/toolbar-demo';
 
@@ -9,6 +8,7 @@ import AccordionDemo from './demo/accordion-demo';
 import AspectRatioDemo from './demo/aspect-ratio-demo';
 import { AvatarDemo } from './demo/avatar-demo';
 import { AlertDialogDemo } from './demo/alert-dialog-demo';
+import CheckboxDemo from './demo/checkbox-demo';
 
 export interface AppProps {
     className?: string;
@@ -48,6 +48,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <AvatarDemo className={classes.avatar} />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Checkbox</h2>
+                <div>
+                    <CheckboxDemo className={classes.checkbox} />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <CheckboxDemo className={classes.checkbox} />
                 </div>
             </div>
             <div className={classes.compSection}>
