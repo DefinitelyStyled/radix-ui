@@ -11,6 +11,7 @@ import { AlertDialogDemo } from './demo/alert-dialog-demo';
 import CheckboxDemo from './demo/checkbox-demo';
 import CollapsibleDemo from './demo/collapsible-demo';
 import ContextMenuDemo from './demo/context-menu-demo';
+import DialogDemo from './demo/dialog-demo';
 
 export interface AppProps {
     className?: string;
@@ -77,6 +78,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <ContextMenuDemo className={classes.collapsible} />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Dialog</h2>
+                <div>
+                    <DialogDemo className={classes.collapsible} />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <DialogDemo className={classes.collapsible} />
                 </div>
             </div>
             <div className={classes.compSection}>
