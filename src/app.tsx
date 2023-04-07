@@ -1,4 +1,5 @@
 import type React from 'react';
+import './globals.st.css';
 import { st, classes } from './app.st.css';
 import { classes as darkTheme } from './theme/dark.st.css';
 import './theme/base.st.css';
