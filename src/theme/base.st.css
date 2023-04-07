@@ -12,6 +12,8 @@
 @st-import CheckboxVariant from "../components/checkbox/checkbox.variant.st.css";
 @st-import Collapsible from "../components/collapsible/collapsible.st.css";
 @st-import CollapsibleVariant from "../components/collapsible/collapsible.variant.st.css";
+@st-import ContextMenu from "../components/context-menu/context-menu.st.css";
+@st-import ContextMenuVariant from "../components/context-menu/context-menu.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -40,5 +42,9 @@
 
     Collapsible {
         -st-mixin: CollapsibleVariant;
+    }
+
+    ContextMenu {
+        -st-mixin: ContextMenuVariant;
     }
 }
