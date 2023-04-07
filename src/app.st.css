@@ -4,6 +4,7 @@
 @st-import AspectRatio from "./components/aspect-ratio/aspect-ratio.st.css";
 @st-import Avatar from "./components/avatar/avatar.st.css";
 @st-import Checkbox from "./components/checkbox/checkbox.st.css";
+@st-import Collapsible from "./components/collapsible/collapsible.st.css";
 
 .root {}
 
@@ -42,6 +43,10 @@
 
 .checkbox {
     -st-extends: Checkbox;
+}
+
+.collapsible {
+    -st-extends: Collapsible;
 }
 
 .toolbar {

@@ -16,7 +16,7 @@ export const Collapsible: typeof RadixCollapsible.Root = React.forwardRef(functi
 });
 
 export const CollapsibleTrigger: typeof RadixCollapsible.Trigger = React.forwardRef(
-    function Collapsible(props, forwardRef) {
+    function CollapsibleTrigger(props, forwardRef) {
         return (
             <RadixCollapsible.Trigger
                 ref={forwardRef}
@@ -28,7 +28,7 @@ export const CollapsibleTrigger: typeof RadixCollapsible.Trigger = React.forward
 );
 
 export const CollapsibleContent: typeof RadixCollapsible.Content = React.forwardRef(
-    function Collapsible(props, forwardRef) {
+    function CollapsibleContent(props, forwardRef) {
         return (
             <RadixCollapsible.Content
                 ref={forwardRef}

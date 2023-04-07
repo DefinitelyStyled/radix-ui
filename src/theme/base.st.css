@@ -10,6 +10,8 @@
 @st-import AvatarVariant from "../components/avatar/avatar.variant.st.css";
 @st-import Checkbox from "../components/checkbox/checkbox.st.css";
 @st-import CheckboxVariant from "../components/checkbox/checkbox.variant.st.css";
+@st-import Collapsible from "../components/collapsible/collapsible.st.css";
+@st-import CollapsibleVariant from "../components/collapsible/collapsible.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -34,5 +36,9 @@
 
     Checkbox {
         -st-mixin: CheckboxVariant;
+    }
+
+    Collapsible {
+        -st-mixin: CollapsibleVariant;
     }
 }

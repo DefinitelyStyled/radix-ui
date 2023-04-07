@@ -11,8 +11,8 @@ const CheckboxDemo: React.FunctionComponent<CheckboxDemoProps> = () => {
     return (
         <form>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-                <Checkbox className="CheckboxRoot" defaultChecked id="c1">
-                    <CheckboxIndicator className="CheckboxIndicator">
+                <Checkbox defaultChecked id="c1">
+                    <CheckboxIndicator>
                         <CheckIcon />
                     </CheckboxIndicator>
                 </Checkbox>
