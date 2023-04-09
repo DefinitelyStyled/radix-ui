@@ -21,7 +21,7 @@ export const ToggleGroupItem: typeof RadixToggleGroup.Item = React.forwardRef(
             <RadixToggleGroup.Item
                 ref={forwardRef}
                 {...props}
-                className={st(classes.root, props.className)}
+                className={st(classes.item, props.className)}
             />
         );
     }

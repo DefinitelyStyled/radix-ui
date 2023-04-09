@@ -28,6 +28,7 @@ import SwitchDemo from './demo/switch-demo';
 import TabsDemo from './demo/tabs-demo';
 import ToastDemo from './demo/toast-demo';
 import ToggleDemo from './demo/toggle-demo';
+import ToggleGroupDemo from './demo/toggle-group-demo';
 
 export interface AppProps {
     className?: string;
@@ -238,6 +239,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <ToggleDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Toggle Group</h2>
+                <div>
+                    <ToggleGroupDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <ToggleGroupDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
