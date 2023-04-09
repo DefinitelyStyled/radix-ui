@@ -21,6 +21,7 @@ import PopoverDemo from './demo/popover-demo';
 import ProgressDemo from './demo/progress-demo';
 import RadioGroupDemo from './demo/radio-group-demo';
 import ScrollAreaDemo from './demo/scroll-area-demo';
+import SelectDemo from './demo/select-demo';
 
 export interface AppProps {
     className?: string;
@@ -168,6 +169,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <ScrollAreaDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Select</h2>
+                <div>
+                    <SelectDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <SelectDemo />
                 </div>
             </div>
             <div className={classes.compSection}>

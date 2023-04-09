@@ -32,6 +32,8 @@
 @st-import RadioGroupVariant from "../components/radio-group/radio-group.variant.st.css";
 @st-import ScrollArea from "../components/scroll-area/scroll-area.st.css";
 @st-import ScrollAreaVariant from "../components/scroll-area/scroll-area.variant.st.css";
+@st-import Select from "../components/select/select.st.css";
+@st-import SelectVariant from "../components/select/select.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -100,5 +102,9 @@
 
     ScrollArea {
         -st-mixin: ScrollAreaVariant;
+    }
+
+    Select {
+        -st-mixin: SelectVariant;
     }
 }
