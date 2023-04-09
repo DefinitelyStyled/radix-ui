@@ -5,6 +5,8 @@
 @st-import Avatar from "./components/avatar/avatar.st.css";
 @st-import Checkbox from "./components/checkbox/checkbox.st.css";
 @st-import Collapsible from "./components/collapsible/collapsible.st.css";
+@st-import Dialog from "./components/dialog/dialog.st.css";
+@st-import DropdownMenu from "./components/dropdown-menu/dropdown-menu.st.css";
 
 .root {}
 
@@ -47,6 +49,14 @@
 
 .collapsible {
     -st-extends: Collapsible;
+}
+
+.dialog {
+    -st-extends: Dialog;
+}
+
+.dropdownMenu {
+    -st-extends: DropdownMenu;
 }
 
 .toolbar {

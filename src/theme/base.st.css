@@ -16,6 +16,8 @@
 @st-import ContextMenuVariant from "../components/context-menu/context-menu.variant.st.css";
 @st-import Dialog from "../components/dialog/dialog.st.css";
 @st-import DialogVariant from "../components/dialog/dialog.variant.st.css";
+@st-import DropdownMenu from "../components/dropdown-menu/dropdown-menu.st.css";
+@st-import DropdownMenuVariant from "../components/dropdown-menu/dropdown-menu.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -52,5 +54,9 @@
 
     Dialog {
         -st-mixin: DialogVariant;
+    }
+
+    DropdownMenu {
+        -st-mixin: DropdownMenuVariant;
     }
 }

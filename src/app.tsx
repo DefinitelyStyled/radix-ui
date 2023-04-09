@@ -13,6 +13,7 @@ import CheckboxDemo from './demo/checkbox-demo';
 import CollapsibleDemo from './demo/collapsible-demo';
 import ContextMenuDemo from './demo/context-menu-demo';
 import DialogDemo from './demo/dialog-demo';
+import DropdownMenuDemo from './demo/dropdown-menu-demo';
 
 export interface AppProps {
     className?: string;
@@ -84,10 +85,19 @@ export const App: React.FC<AppProps> = ({ className }) => {
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Dialog</h2>
                 <div>
-                    <DialogDemo className={classes.collapsible} />
+                    <DialogDemo className={classes.dialog} />
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <DialogDemo className={classes.collapsible} />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Dropdown Menu</h2>
+                <div>
+                    <DropdownMenuDemo className={classes.dropdownMenu} />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <DropdownMenuDemo className={classes.dropdownMenu} />
                 </div>
             </div>
             <div className={classes.compSection}>
