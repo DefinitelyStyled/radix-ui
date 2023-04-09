@@ -14,6 +14,7 @@ import CollapsibleDemo from './demo/collapsible-demo';
 import ContextMenuDemo from './demo/context-menu-demo';
 import DialogDemo from './demo/dialog-demo';
 import DropdownMenuDemo from './demo/dropdown-menu-demo';
+import HoverCardDemo from './demo/hover-card-demo';
 
 export interface AppProps {
     className?: string;
@@ -25,10 +26,10 @@ export const App: React.FC<AppProps> = ({ className }) => {
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Accordion</h2>
                 <div>
-                    <AccordionDemo className={classes.accordion} />
+                    <AccordionDemo />
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
-                    <AccordionDemo className={classes.accordion} />
+                    <AccordionDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
@@ -43,70 +44,79 @@ export const App: React.FC<AppProps> = ({ className }) => {
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Aspect Ratio</h2>
                 <div>
-                    <AspectRatioDemo className={classes.aspectRatio} />
+                    <AspectRatioDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Avatar</h2>
                 <div>
-                    <AvatarDemo className={classes.avatar} />
+                    <AvatarDemo />
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
-                    <AvatarDemo className={classes.avatar} />
+                    <AvatarDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Checkbox</h2>
                 <div>
-                    <CheckboxDemo className={classes.checkbox} />
+                    <CheckboxDemo />
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
-                    <CheckboxDemo className={classes.checkbox} />
+                    <CheckboxDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Collapsible</h2>
                 <div>
-                    <CollapsibleDemo className={classes.collapsible} />
+                    <CollapsibleDemo />
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
-                    <CollapsibleDemo className={classes.collapsible} />
+                    <CollapsibleDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Context Menu</h2>
                 <div>
-                    <ContextMenuDemo className={classes.collapsible} />
+                    <ContextMenuDemo />
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
-                    <ContextMenuDemo className={classes.collapsible} />
+                    <ContextMenuDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Dialog</h2>
                 <div>
-                    <DialogDemo className={classes.dialog} />
+                    <DialogDemo />
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
-                    <DialogDemo className={classes.collapsible} />
+                    <DialogDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Dropdown Menu</h2>
                 <div>
-                    <DropdownMenuDemo className={classes.dropdownMenu} />
+                    <DropdownMenuDemo />
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
-                    <DropdownMenuDemo className={classes.dropdownMenu} />
+                    <DropdownMenuDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Hover Card</h2>
+                <div>
+                    <HoverCardDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <HoverCardDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
                 <h2 className={classes.compTitle}>Toolbar</h2>
                 <div>
-                    <ToolbarDemo className={classes.toolbar} />
+                    <ToolbarDemo />
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
-                    <ToolbarDemo className={classes.toolbar} />
+                    <ToolbarDemo />
                 </div>
             </div>
         </main>

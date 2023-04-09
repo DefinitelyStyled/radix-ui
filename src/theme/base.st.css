@@ -18,6 +18,8 @@
 @st-import DialogVariant from "../components/dialog/dialog.variant.st.css";
 @st-import DropdownMenu from "../components/dropdown-menu/dropdown-menu.st.css";
 @st-import DropdownMenuVariant from "../components/dropdown-menu/dropdown-menu.variant.st.css";
+@st-import HoverCard from "../components/hover-card/hover-card.st.css";
+@st-import HoverCardVariant from "../components/hover-card/hover-card.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -58,5 +60,9 @@
 
     DropdownMenu {
         -st-mixin: DropdownMenuVariant;
+    }
+
+    HoverCard {
+        -st-mixin: HoverCardVariant;
     }
 }

@@ -1,13 +1,3 @@
-@st-import Toolbar from "./components/toolbar/toolbar.st.css";
-@st-import Accordion from "./components/accordion/accordion.st.css";
-@st-import AlertDialog from "./components/alert-dialog/alert-dialog.st.css";
-@st-import AspectRatio from "./components/aspect-ratio/aspect-ratio.st.css";
-@st-import Avatar from "./components/avatar/avatar.st.css";
-@st-import Checkbox from "./components/checkbox/checkbox.st.css";
-@st-import Collapsible from "./components/collapsible/collapsible.st.css";
-@st-import Dialog from "./components/dialog/dialog.st.css";
-@st-import DropdownMenu from "./components/dropdown-menu/dropdown-menu.st.css";
-
 .root {}
 
 .compSection {
@@ -27,38 +17,3 @@
     margin: 0 0 1em 0;
 }
 
-.accordion {
-    -st-extends: Accordion;
-}
-
-.alertDialog {
-    -st-extends: AlertDialog;
-}
-
-.aspectRatio {
-    -st-extends: AspectRatio;
-}
-
-.avatar {
-    -st-extends: Avatar;
-}
-
-.checkbox {
-    -st-extends: Checkbox;
-}
-
-.collapsible {
-    -st-extends: Collapsible;
-}
-
-.dialog {
-    -st-extends: Dialog;
-}
-
-.dropdownMenu {
-    -st-extends: DropdownMenu;
-}
-
-.toolbar {
-    -st-extends: Toolbar;
-}

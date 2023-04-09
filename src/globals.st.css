@@ -10,6 +10,7 @@
   padding: 0;
 }
 
+:global(a),
 :global(input),
 :global(button),
 :global(fieldset) {
