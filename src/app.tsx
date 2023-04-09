@@ -16,6 +16,7 @@ import DialogDemo from './demo/dialog-demo';
 import DropdownMenuDemo from './demo/dropdown-menu-demo';
 import HoverCardDemo from './demo/hover-card-demo';
 import LabelDemo from './demo/label-demo';
+import NavigationMenuDemo from './demo/navigation-menu-demo';
 
 export interface AppProps {
     className?: string;
@@ -118,6 +119,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <LabelDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Navigation Menu</h2>
+                <div>
+                    <NavigationMenuDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <NavigationMenuDemo />
                 </div>
             </div>
             <div className={classes.compSection}>

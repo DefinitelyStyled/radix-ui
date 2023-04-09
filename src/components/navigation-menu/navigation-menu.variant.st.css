@@ -1,0 +1,237 @@
+@st-import [
+    --white,
+    --blackA7,
+    --violet3,
+    --violet7,
+    --violet11,
+] from '../../common.st.css';
+@st-import NavigationMenu, [
+    --radix-navigation-menu-viewport-width,
+    --radix-navigation-menu-viewport-height
+] from './navigation-menu.st.css';
+
+.root {
+    -st-extends: NavigationMenu;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* width: 100vw; */
+    z-index: 1;
+}
+
+.root::list {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    padding: 4px;
+    border-radius: 6px;
+    list-style: none;
+    box-shadow: 0 2px 10px var(--blackA7);
+    margin: 0;
+}
+
+.root::link,
+.root::trigger {
+    padding: 8px 12px;
+    outline: none;
+    user-select: none;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 4px;
+    font-size: 15px;
+    color: var(--violet11);
+}
+
+.root::link:focus,
+.root::trigger:focus {
+    box-shadow: 0 0 0 2px var(--violet7);
+}
+
+.root::link:hover,
+.root::trigger:hover {
+    background-color: var(--violet3);
+}
+
+.root::trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.root::link {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.root::content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-duration: 250ms;
+    animation-timing-function: ease;
+}
+
+.root::content:from-start {
+    animation-name: enterFromLeft;
+}
+
+.root::content:from-end {
+    animation-name: enterFromRight;
+}
+
+.root::content:to-start {
+    animation-name: exitToLeft;
+}
+
+.root::content:to-end {
+    animation-name: exitToRight;
+}
+
+@media only screen and (min-width: 600px) {
+    .root::content {
+        width: auto;
+    }
+}
+
+.root::indicator {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 10px;
+    top: 100%;
+    overflow: hidden;
+    z-index: 1;
+    transition: width, transform 250ms ease;
+}
+
+.root::indicator:visible {
+    animation: fadeIn 200ms ease;
+}
+
+.root::indicator:hidden {
+    animation: fadeOut 200ms ease;
+}
+
+.root::viewport {
+    position: relative;
+    transform-origin: top center;
+    margin-top: 10px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+                hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+    height: var(--radix-navigation-menu-viewport-height);
+    transition: width, height, 300ms ease;
+}
+
+.root::content:open {
+    animation: scaleIn 200ms ease;
+}
+
+.root::content:closed {
+    animation: scaleOut 200ms ease;
+}
+
+@media only screen and (min-width: 600px) {
+    .root::viewport {
+        width: var(--radix-navigation-menu-viewport-width);
+    }
+}
+
+@keyframes enterFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes enterFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes exitToRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+}
+
+@keyframes exitToLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-30deg) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0deg) scale(1);
+    }
+}
+
+@keyframes scaleOut {
+    from {
+        opacity: 1;
+        transform: rotateX(0deg) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: rotateX(-10deg) scale(0.95);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

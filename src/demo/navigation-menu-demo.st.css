@@ -1,0 +1,128 @@
+@st-import [
+    --white,
+    --violet7,
+    --mauve3,
+    --violet12,
+    --mauve11,
+    --purple9,
+    --indigo9,
+    --mauve4,
+    --violet10,
+] from '../common.st.css';
+
+.list {
+    display: grid;
+    padding: 22px;
+    margin: 0;
+    column-gap: 10px;
+    list-style: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .list.one {
+        width: 500px;
+        grid-template-columns: 0.75fr 1fr;
+    }
+
+    .list.two {
+        width: 600px;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+.listItemLink {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    user-select: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.listItemLink:focus {
+    box-shadow: 0 0 0 2px var(--violet7);
+}
+
+.listItemLink:hover {
+    background-color: var(--mauve3);
+}
+
+.listItemHeading {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    color: var(--violet12);
+}
+
+.listItemText {
+    color: var(--mauve11);
+    line-height: 1.4;
+    font-weight: initial;
+}
+
+.callout {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--purple9) 0%, var(--indigo9) 100%);
+    border-radius: 6px;
+    padding: 25px;
+    text-decoration: none;
+    outline: none;
+    user-select: none;
+}
+
+.callout:focus {
+    box-shadow: 0 0 0 2px var(--violet7);
+}
+
+.calloutHeading {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 16px;
+    margin-bottom: 7px;
+}
+
+.calloutText {
+    color: var(--mauve4);
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.viewportPosition {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    perspective: 2000px;
+}
+
+.caretDown {
+    position: relative;
+    color: var(--violet10);
+    top: 1px;
+    transition: transform 250ms ease;
+}
+
+[data-state='open'] > .caretDown {
+    transform: rotate(-180deg);
+}
+
+.arrow {
+    position: relative;
+    top: 70%;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-top-left-radius: 2px;
+}

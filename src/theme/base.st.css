@@ -22,6 +22,8 @@
 @st-import HoverCardVariant from "../components/hover-card/hover-card.variant.st.css";
 @st-import Label from "../components/label/label.st.css";
 @st-import LabelVariant from "../components/label/label.variant.st.css";
+@st-import NavigationMenu from "../components/navigation-menu/navigation-menu.st.css";
+@st-import NavigationMenuVariant from "../components/navigation-menu/navigation-menu.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -70,5 +72,9 @@
 
     Label {
         -st-mixin: LabelVariant;
+    }
+
+    NavigationMenu {
+        -st-mixin: NavigationMenuVariant;
     }
 }

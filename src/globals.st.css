@@ -11,6 +11,7 @@
 }
 
 :global(a),
+:global(p),
 :global(input),
 :global(button),
 :global(fieldset) {

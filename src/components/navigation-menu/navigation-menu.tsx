@@ -2,7 +2,7 @@ import React from 'react';
 import * as RadixNavigationMenu from '@radix-ui/react-navigation-menu';
 import { st, classes } from './navigation-menu.st.css';
 
-export const Navigation: typeof RadixNavigationMenu.Root = React.forwardRef(function Navigation(
+export const NavigationMenu: typeof RadixNavigationMenu.Root = React.forwardRef(function Navigation(
     props,
     forwardRef
 ) {

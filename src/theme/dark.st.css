@@ -23,6 +23,18 @@
     --green10,
     --green11,
     --green12,
+    --indigo1,
+    --indigo2,
+    --indigo3,
+    --indigo4,
+    --indigo5,
+    --indigo6,
+    --indigo7,
+    --indigo8,
+    --indigo9,
+    --indigo10,
+    --indigo11,
+    --indigo12,
     --mauve1,
     --mauve2,
     --mauve3,
@@ -35,6 +47,18 @@
     --mauve10,
     --mauve11,
     --mauve12,
+    --purple1,
+    --purple2,
+    --purple3,
+    --purple4,
+    --purple5,
+    --purple6,
+    --purple7,
+    --purple8,
+    --purple9,
+    --purple10,
+    --purple11,
+    --purple12,
     --red1,
     --red2,
     --red3,
@@ -88,6 +112,18 @@
     --green10: hsl(151, 49.3%, 46.5%);
     --green11: hsl(151, 50.0%, 53.2%);
     --green12: hsl(137, 72.0%, 94.0%);
+    --indigo1: hsl(229, 24.0%, 10.0%);
+    --indigo2: hsl(230, 36.4%, 12.9%);
+    --indigo3: hsl(228, 43.3%, 17.5%);
+    --indigo4: hsl(227, 47.2%, 21.0%);
+    --indigo5: hsl(227, 50.0%, 24.1%);
+    --indigo6: hsl(226, 52.9%, 28.2%);
+    --indigo7: hsl(226, 56.0%, 34.5%);
+    --indigo8: hsl(226, 58.2%, 44.1%);
+    --indigo9: hsl(226, 70.0%, 55.5%);
+    --indigo10: hsl(227, 75.2%, 61.6%);
+    --indigo11: hsl(228, 100%, 75.9%);
+    --indigo12: hsl(226, 83.0%, 96.3%);
     --mauve1: hsl(246, 6.0%, 9.0%);
     --mauve2: hsl(240, 5.1%, 11.6%);
     --mauve3: hsl(241, 5.0%, 14.3%);
@@ -100,6 +136,18 @@
     --mauve10: hsl(247, 3.4%, 50.7%);
     --mauve11: hsl(253, 4.0%, 63.7%);
     --mauve12: hsl(256, 6.0%, 93.2%);
+    --purple1: hsl(284, 20.0%, 9.6%);
+    --purple2: hsl(283, 30.0%, 11.8%);
+    --purple3: hsl(281, 37.5%, 16.5%);
+    --purple4: hsl(280, 41.2%, 20.0%);
+    --purple5: hsl(279, 43.8%, 23.3%);
+    --purple6: hsl(277, 46.4%, 27.5%);
+    --purple7: hsl(275, 49.3%, 34.6%);
+    --purple8: hsl(272, 52.1%, 45.9%);
+    --purple9: hsl(272, 51.0%, 54.0%);
+    --purple10: hsl(273, 57.3%, 59.1%);
+    --purple11: hsl(275, 80.0%, 71.0%);
+    --purple12: hsl(279, 75.0%, 95.7%);
     --red1: hsl(353, 23.0%, 9.8%);
     --red2: hsl(357, 34.4%, 12.0%);
     --red3: hsl(356, 43.4%, 16.4%);
