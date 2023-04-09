@@ -1,8 +1,8 @@
 import type React from 'react';
 import './globals.st.css';
-import { st, classes } from './app.st.css';
-import { classes as darkTheme } from './theme/dark.st.css';
 import './theme/base.st.css';
+import { classes as darkTheme } from './theme/dark.st.css';
+import { st, classes } from './app.st.css';
 
 import { ToolbarDemo } from './demo/toolbar-demo';
 import AccordionDemo from './demo/accordion-demo';
@@ -15,6 +15,7 @@ import ContextMenuDemo from './demo/context-menu-demo';
 import DialogDemo from './demo/dialog-demo';
 import DropdownMenuDemo from './demo/dropdown-menu-demo';
 import HoverCardDemo from './demo/hover-card-demo';
+import LabelDemo from './demo/label-demo';
 
 export interface AppProps {
     className?: string;
@@ -108,6 +109,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <HoverCardDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Label</h2>
+                <div>
+                    <LabelDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <LabelDemo />
                 </div>
             </div>
             <div className={classes.compSection}>

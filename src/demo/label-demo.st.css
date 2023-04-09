@@ -1,0 +1,30 @@
+@st-import [
+    --white,
+    --blackA5,
+    --blackA9,
+    --black
+] from '../common.st.css';
+
+.input {
+    width: 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 10px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 1;
+    color: var(--white);
+    background-color: var(--blackA5);
+    box-shadow: 0 0 0 1px var(--blackA9);
+}
+
+.input:focus {
+    box-shadow: 0 0 0 2px var(--black);
+}
+
+.input::selection {
+    background-color: var(--blackA9);
+    color: var(--white);
+}

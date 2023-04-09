@@ -1,6 +1,6 @@
 import React from 'react';
 import * as RadixLabel from '@radix-ui/react-label';
-import { st, classes } from './hover-card.st.css';
+import { st, classes } from './label.st.css';
 
 export const Label: typeof RadixLabel.Root = React.forwardRef(function Label(props, forwardRef) {
     return (
