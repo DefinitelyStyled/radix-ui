@@ -14,6 +14,7 @@
 :global(p),
 :global(input),
 :global(button),
+:global(textarea),
 :global(fieldset) {
   all: unset;
 }

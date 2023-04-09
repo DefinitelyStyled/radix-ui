@@ -1,0 +1,17 @@
+.root {}
+
+.field {
+    -st-states: invalid('[data-invalid]'), valid('[data-valid]');
+}
+
+.label {
+    -st-states: invalid('[data-invalid]'), valid('[data-valid]');
+}
+
+.control {
+    -st-states: invalid('[data-invalid]'), valid('[data-valid]');
+}
+
+.message {}
+
+.submit {}
