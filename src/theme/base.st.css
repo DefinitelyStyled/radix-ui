@@ -26,6 +26,8 @@
 @st-import NavigationMenuVariant from "../components/navigation-menu/navigation-menu.variant.st.css";
 @st-import Popover from "../components/popover/popover.st.css";
 @st-import PopoverVariant from "../components/popover/popover.variant.st.css";
+@st-import Progress from "../components/progress/progress.st.css";
+@st-import ProgressVariant from "../components/progress/progress.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -82,5 +84,9 @@
 
     Popover {
         -st-mixin: PopoverVariant;
+    }
+
+    Progress {
+        -st-mixin: ProgressVariant;
     }
 }

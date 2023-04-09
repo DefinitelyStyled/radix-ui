@@ -18,6 +18,7 @@ import HoverCardDemo from './demo/hover-card-demo';
 import LabelDemo from './demo/label-demo';
 import NavigationMenuDemo from './demo/navigation-menu-demo';
 import PopoverDemo from './demo/popover-demo';
+import ProgressDemo from './demo/progress-demo';
 
 export interface AppProps {
     className?: string;
@@ -138,6 +139,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <PopoverDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Progress</h2>
+                <div>
+                    <ProgressDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <ProgressDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
