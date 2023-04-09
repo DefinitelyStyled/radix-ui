@@ -26,6 +26,7 @@ import SeparatorDemo from './demo/separator-demo';
 import SliderDemo from './demo/slider-demo';
 import SwitchDemo from './demo/switch-demo';
 import TabsDemo from './demo/tabs-demo';
+import ToastDemo from './demo/toast-demo';
 
 export interface AppProps {
     className?: string;
@@ -218,6 +219,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <TabsDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Toast</h2>
+                <div>
+                    <ToastDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <ToastDemo />
                 </div>
             </div>
             <div className={classes.compSection}>

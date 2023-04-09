@@ -42,6 +42,8 @@
 @st-import SwitchVariant from "../components/switch/switch.variant.st.css";
 @st-import Tabs from "../components/tabs/tabs.st.css";
 @st-import TabsVariant from "../components/tabs/tabs.variant.st.css";
+@st-import Toast from "../components/toast/toast.st.css";
+@st-import ToastVariant from "../components/toast/toast.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -130,5 +132,9 @@
 
     Tabs {
         -st-mixin: TabsVariant;
+    }
+
+    Toast {
+        -st-mixin: ToastVariant;
     }
 }
