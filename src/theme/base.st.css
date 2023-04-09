@@ -38,6 +38,8 @@
 @st-import SeparatorVariant from "../components/separator/separator.variant.st.css";
 @st-import Slider from "../components/slider/slider.st.css";
 @st-import SliderVariant from "../components/slider/slider.variant.st.css";
+@st-import Switch from "../components/switch/switch.st.css";
+@st-import SwitchVariant from "../components/switch/switch.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -118,5 +120,9 @@
 
     Slider {
         -st-mixin: SliderVariant;
+    }
+
+    Switch {
+        -st-mixin: SwitchVariant;
     }
 }

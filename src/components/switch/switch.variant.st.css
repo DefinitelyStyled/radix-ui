@@ -1,0 +1,42 @@
+@st-import [
+    --white,
+    --black,
+    --blackA7,
+    --blackA9
+] from '../../common.st.css';
+@st-import Switch from './switch.st.css';
+
+.root {
+    -st-extends: Switch;
+    width: 42px;
+    height: 25px;
+    background-color: var(--blackA9);
+    border-radius: 9999px;
+    position: relative;
+    box-shadow: 0 2px 10px var(--blackA7);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.root:focus {
+    box-shadow: 0 0 0 2px var(--black);
+}
+
+.root:checked {
+    background-color: var(--black);
+}
+
+.root::thumb {
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-color: var(--white);
+    border-radius: 9999px;
+    box-shadow: 0 2px 2px var(--blackA7);
+    transition: transform 100ms;
+    transform: translateX(2px);
+    will-change: transform;
+}
+
+.root::thumb:checked {
+    transform: translateX(19px);
+}

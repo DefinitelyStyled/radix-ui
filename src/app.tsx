@@ -24,6 +24,7 @@ import ScrollAreaDemo from './demo/scroll-area-demo';
 import SelectDemo from './demo/select-demo';
 import SeparatorDemo from './demo/separator-demo';
 import SliderDemo from './demo/slider-demo';
+import SwitchDemo from './demo/switch-demo';
 
 export interface AppProps {
     className?: string;
@@ -198,6 +199,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <SliderDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Switch</h2>
+                <div>
+                    <SwitchDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <SwitchDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
