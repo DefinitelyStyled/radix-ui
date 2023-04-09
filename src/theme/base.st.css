@@ -40,6 +40,8 @@
 @st-import SliderVariant from "../components/slider/slider.variant.st.css";
 @st-import Switch from "../components/switch/switch.st.css";
 @st-import SwitchVariant from "../components/switch/switch.variant.st.css";
+@st-import Tabs from "../components/tabs/tabs.st.css";
+@st-import TabsVariant from "../components/tabs/tabs.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -124,5 +126,9 @@
 
     Switch {
         -st-mixin: SwitchVariant;
+    }
+
+    Tabs {
+        -st-mixin: TabsVariant;
     }
 }
