@@ -1,7 +1,7 @@
 .root {}
 
 .compSection {
-    width: 500px;
+    width: 600px;
     border-radius: 6px;
     background: hsl(0, 0%, 30%);
     padding: 1em;

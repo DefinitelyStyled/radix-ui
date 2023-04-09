@@ -17,6 +17,7 @@ import DropdownMenuDemo from './demo/dropdown-menu-demo';
 import HoverCardDemo from './demo/hover-card-demo';
 import LabelDemo from './demo/label-demo';
 import NavigationMenuDemo from './demo/navigation-menu-demo';
+import PopoverDemo from './demo/popover-demo';
 
 export interface AppProps {
     className?: string;
@@ -128,6 +129,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <NavigationMenuDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Popover</h2>
+                <div>
+                    <PopoverDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <PopoverDemo />
                 </div>
             </div>
             <div className={classes.compSection}>

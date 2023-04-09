@@ -24,6 +24,8 @@
 @st-import LabelVariant from "../components/label/label.variant.st.css";
 @st-import NavigationMenu from "../components/navigation-menu/navigation-menu.st.css";
 @st-import NavigationMenuVariant from "../components/navigation-menu/navigation-menu.variant.st.css";
+@st-import Popover from "../components/popover/popover.st.css";
+@st-import PopoverVariant from "../components/popover/popover.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -76,5 +78,9 @@
 
     NavigationMenu {
         -st-mixin: NavigationMenuVariant;
+    }
+
+    Popover {
+        -st-mixin: PopoverVariant;
     }
 }
