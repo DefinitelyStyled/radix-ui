@@ -30,6 +30,8 @@
 @st-import ProgressVariant from "../components/progress/progress.variant.st.css";
 @st-import RadioGroup from "../components/radio-group/radio-group.st.css";
 @st-import RadioGroupVariant from "../components/radio-group/radio-group.variant.st.css";
+@st-import ScrollArea from "../components/scroll-area/scroll-area.st.css";
+@st-import ScrollAreaVariant from "../components/scroll-area/scroll-area.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -94,5 +96,9 @@
 
     RadioGroup {
         -st-mixin: RadioGroupVariant;
+    }
+
+    ScrollArea {
+        -st-mixin: ScrollAreaVariant;
     }
 }
