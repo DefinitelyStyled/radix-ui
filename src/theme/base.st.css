@@ -44,6 +44,8 @@
 @st-import TabsVariant from "../components/tabs/tabs.variant.st.css";
 @st-import Toast from "../components/toast/toast.st.css";
 @st-import ToastVariant from "../components/toast/toast.variant.st.css";
+@st-import Toggle from "../components/toggle/toggle.st.css";
+@st-import ToggleVariant from "../components/toggle/toggle.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -136,5 +138,9 @@
 
     Toast {
         -st-mixin: ToastVariant;
+    }
+
+    Toggle {
+        -st-mixin: ToggleVariant;
     }
 }
