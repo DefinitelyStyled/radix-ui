@@ -22,7 +22,7 @@ export interface ToolbarProps {
     className?: string;
 }
 
-export const ToolbarDemo: React.FC<ToolbarProps> = ({ className }) => {
+const ToolbarDemo: React.FC<ToolbarProps> = ({ className }) => {
     return (
         <Toolbar className={className} aria-label="Formatting options">
             <ToolbarToggleGroup type="multiple" aria-label="Text formatting">
@@ -54,3 +54,5 @@ export const ToolbarDemo: React.FC<ToolbarProps> = ({ className }) => {
         </Toolbar>
     );
 };
+
+export default ToolbarDemo;

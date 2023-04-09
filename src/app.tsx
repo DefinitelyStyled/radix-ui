@@ -4,7 +4,6 @@ import './theme/base.st.css';
 import { classes as darkTheme } from './theme/dark.st.css';
 import { st, classes } from './app.st.css';
 
-import { ToolbarDemo } from './demo/toolbar-demo';
 import AccordionDemo from './demo/accordion-demo';
 import AspectRatioDemo from './demo/aspect-ratio-demo';
 import { AvatarDemo } from './demo/avatar-demo';
@@ -29,6 +28,8 @@ import TabsDemo from './demo/tabs-demo';
 import ToastDemo from './demo/toast-demo';
 import ToggleDemo from './demo/toggle-demo';
 import ToggleGroupDemo from './demo/toggle-group-demo';
+import ToolbarDemo from './demo/toolbar-demo';
+import TooltipDemo from './demo/tooltip-demo';
 
 export interface AppProps {
     className?: string;
@@ -257,6 +258,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <ToolbarDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Tooltip</h2>
+                <div>
+                    <TooltipDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <TooltipDemo />
                 </div>
             </div>
         </main>

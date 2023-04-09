@@ -1,5 +1,3 @@
-@st-import Toolbar from "../components/toolbar/toolbar.st.css";
-@st-import ToolbarVariant from "../components/toolbar/toolbar.variant.st.css";
 @st-import Accordion from "../components/accordion/accordion.st.css";
 @st-import AccordionVariant from "../components/accordion/accordion.variant.st.css";
 @st-import AlertDialog from "../components/alert-dialog/alert-dialog.st.css";
@@ -48,12 +46,12 @@
 @st-import ToggleVariant from "../components/toggle/toggle.variant.st.css";
 @st-import ToggleGroup from "../components/toggle-group/toggle-group.st.css";
 @st-import ToggleGroupVariant from "../components/toggle-group/toggle-group.variant.st.css";
+@st-import Toolbar from "../components/toolbar/toolbar.st.css";
+@st-import ToolbarVariant from "../components/toolbar/toolbar.variant.st.css";
+@st-import Tooltip from "../components/tooltip/tooltip.st.css";
+@st-import TooltipVariant from "../components/tooltip/tooltip.variant.st.css";
 
 @st-scope * {
-    Toolbar {
-        -st-mixin: ToolbarVariant;
-    }
-
     Accordion {
         -st-mixin: AccordionVariant;
     }
@@ -148,5 +146,13 @@
 
     ToggleGroup {
         -st-mixin: ToggleGroupVariant;
+    }
+
+    Toolbar {
+        -st-mixin: ToolbarVariant;
+    }
+
+    Tooltip {
+        -st-mixin: TooltipVariant;
     }
 }
