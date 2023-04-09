@@ -28,6 +28,8 @@
 @st-import PopoverVariant from "../components/popover/popover.variant.st.css";
 @st-import Progress from "../components/progress/progress.st.css";
 @st-import ProgressVariant from "../components/progress/progress.variant.st.css";
+@st-import RadioGroup from "../components/radio-group/radio-group.st.css";
+@st-import RadioGroupVariant from "../components/radio-group/radio-group.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -88,5 +90,9 @@
 
     Progress {
         -st-mixin: ProgressVariant;
+    }
+
+    RadioGroup {
+        -st-mixin: RadioGroupVariant;
     }
 }
