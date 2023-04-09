@@ -34,6 +34,8 @@
 @st-import ScrollAreaVariant from "../components/scroll-area/scroll-area.variant.st.css";
 @st-import Select from "../components/select/select.st.css";
 @st-import SelectVariant from "../components/select/select.variant.st.css";
+@st-import Separator from "../components/separator/separator.st.css";
+@st-import SeparatorVariant from "../components/separator/separator.variant.st.css";
 
 @st-scope * {
     Toolbar {
@@ -106,5 +108,9 @@
 
     Select {
         -st-mixin: SelectVariant;
+    }
+
+    Separator {
+        -st-mixin: SeparatorVariant;
     }
 }

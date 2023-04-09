@@ -1,0 +1,9 @@
+@st-import [
+    --white,
+] from '../common.st.css';
+
+.text {
+    color: var(--white);
+    font-size: 15px;
+    line-height: 20px;
+}

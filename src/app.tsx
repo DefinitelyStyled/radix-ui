@@ -22,6 +22,7 @@ import ProgressDemo from './demo/progress-demo';
 import RadioGroupDemo from './demo/radio-group-demo';
 import ScrollAreaDemo from './demo/scroll-area-demo';
 import SelectDemo from './demo/select-demo';
+import SeparatorDemo from './demo/separator-demo';
 
 export interface AppProps {
     className?: string;
@@ -178,6 +179,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <SelectDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Separator</h2>
+                <div>
+                    <SeparatorDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <SeparatorDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
