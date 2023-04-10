@@ -31,6 +31,7 @@ import ToggleGroupDemo from './demo/toggle-group-demo';
 import ToolbarDemo from './demo/toolbar-demo';
 import TooltipDemo from './demo/tooltip-demo';
 import FormDemo from './demo/form-demo';
+import MenubarDemo from './demo/menubar-demo';
 
 export interface AppProps {
     className?: string;
@@ -142,6 +143,15 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
                 <div className={st(darkTheme.root, classes.themedSection)}>
                     <LabelDemo />
+                </div>
+            </div>
+            <div className={classes.compSection}>
+                <h2 className={classes.compTitle}>Menubar</h2>
+                <div>
+                    <MenubarDemo />
+                </div>
+                <div className={st(darkTheme.root, classes.themedSection)}>
+                    <MenubarDemo />
                 </div>
             </div>
             <div className={classes.compSection}>
