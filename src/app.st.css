@@ -1,11 +1,15 @@
-.root {}
+.root {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin: 1em;
+}
 
 .compSection {
-    width: 600px;
+    background: hsl(0, 0%, 50%);
+    box-shadow: 5px 5px 7px 3px hsl(0, 0%, 0%);
     border-radius: 6px;
-    background: hsl(0, 0%, 30%);
     padding: 1em;
-    margin: 1em;
 }
 
 .themedSection {
@@ -13,7 +17,7 @@
 }
 
 .compTitle {
-    color: white;
+    color: greenyellow;
     margin: 0 0 1em 0;
 }
 
