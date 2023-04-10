@@ -1,9 +1,0 @@
-@st-import [
-    --white,
-] from '../common.st.css';
-
-.label {
-    color: var(--white);
-    font-size: 15px;
-    line-height: 1;
-}

@@ -1,4 +1,0 @@
-.root {
-  -st-states: vertical('[data-orientation="vertical"]'),
-    horizontal('[data-orientation="horizontal"]');
-}
