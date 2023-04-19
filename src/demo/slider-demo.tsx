@@ -1,5 +1,4 @@
 import React from 'react';
-import { classes } from './slider-demo.st.css';
 import { Slider, SliderRange, SliderThumb, SliderTrack } from '../components/slider/slider';
 
 interface SliderDemoProps {

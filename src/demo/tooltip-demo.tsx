@@ -1,5 +1,5 @@
 import React from 'react';
-import { classes, st } from './tooltip-demo.st.css';
+import { classes } from './tooltip-demo.st.css';
 import {
     Tooltip,
     TooltipArrow,

@@ -1,5 +1,4 @@
 import type React from 'react';
-import * as RadixToolbar from '@radix-ui/react-toolbar';
 
 import {
     StrikethroughIcon,

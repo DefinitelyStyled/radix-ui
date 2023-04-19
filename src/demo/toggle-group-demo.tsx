@@ -1,5 +1,4 @@
 import React from 'react';
-import { classes, st } from './toggle-group-demo.st.css';
 import { ToggleGroup, ToggleGroupItem } from '../components/toggle-group/toggle-group';
 import { TextAlignCenterIcon, TextAlignLeftIcon, TextAlignRightIcon } from '@radix-ui/react-icons';
 

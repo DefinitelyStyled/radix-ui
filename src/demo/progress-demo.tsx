@@ -1,5 +1,4 @@
 import React from 'react';
-import { classes } from './progress-demo.st.css';
 import { Progress, ProgressIndicator } from '../components/progress/progress';
 
 interface ProgressDemoProps {

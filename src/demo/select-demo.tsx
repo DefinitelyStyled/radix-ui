@@ -1,5 +1,4 @@
 import React from 'react';
-import { classes } from './select-demo.st.css';
 import {
     Select,
     SelectContent,
