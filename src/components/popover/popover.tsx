@@ -32,9 +32,7 @@ export const PopoverAnchor: typeof RadixPopover.Anchor = React.forwardRef(functi
     );
 });
 
-export const PopoverPortal: React.FC<RadixPopover.PopoverPortalProps> = (props) => (
-    <RadixPopover.Portal {...props} className={st(classes.portal, props.className)} />
-);
+export const PopoverPortal = RadixPopover.Portal;
 
 export const PopoverContent: typeof RadixPopover.Content = React.forwardRef(function PopoverContent(
     props,

@@ -18,9 +18,7 @@ export const ContextMenuTrigger: typeof RadixContextMenu.Trigger = React.forward
     }
 );
 
-export const ContextMenuPortal: React.FC<RadixContextMenu.ContextMenuPortalProps> = (props) => (
-    <RadixContextMenu.Portal {...props} className={st(classes.portal, props.className)} />
-);
+export const ContextMenuPortal = RadixContextMenu.Portal;
 
 export const ContextMenuContent: typeof RadixContextMenu.Content = React.forwardRef(
     function ContextMenuContent(props, forwardRef) {

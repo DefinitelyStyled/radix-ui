@@ -11,8 +11,6 @@
     disabled('[data-disabled]');
 }
 
-.portal {}
-
 @property st-global(--radix-menubar-content-transform-origin);
 @property st-global(--radix-menubar-content-available-width);
 @property st-global(--radix-menubar-content-available-height);

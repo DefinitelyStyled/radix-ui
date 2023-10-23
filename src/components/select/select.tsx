@@ -43,9 +43,7 @@ export const SelectIcon: typeof RadixSelect.Icon = React.forwardRef(function Sel
     );
 });
 
-export const SelectPortal: React.FC<RadixSelect.SelectPortalProps> = (props) => (
-    <RadixSelect.Portal {...props} className={st(classes.portal, props.className)} />
-);
+export const SelectPortal = RadixSelect.Portal;
 
 export const SelectContent: typeof RadixSelect.Content = React.forwardRef(function SelectContent(
     props,

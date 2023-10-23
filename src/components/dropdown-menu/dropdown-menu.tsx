@@ -18,9 +18,7 @@ export const DropdownMenuTrigger: typeof RadixDropdownMenu.Trigger = React.forwa
     }
 );
 
-export const DropdownMenuPortal: React.FC<RadixDropdownMenu.DropdownMenuPortalProps> = (props) => (
-    <RadixDropdownMenu.Portal {...props} className={st(classes.portal, props.className)} />
-);
+export const DropdownMenuPortal = RadixDropdownMenu.Portal;
 
 export const DropdownMenuContent: typeof RadixDropdownMenu.Content = React.forwardRef(
     function DropdownMenuContent(props, forwardRef) {

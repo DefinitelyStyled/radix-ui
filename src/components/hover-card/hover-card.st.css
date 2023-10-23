@@ -7,16 +7,14 @@
   -st-states: open('[data-state="open"]'), closed('[data-state="closed"]');
 }
 
-.portal {}
-
 @property st-global(--radix-dropdown-menu-content-transform-origin);
 
 .content {
   -st-states: open('[data-state="open"]'), closed('[data-state="closed"]'),
-              left('[data-side="left"]'), right('[data-side="right"]'),
-              bottom('[data-side="bottom"]'), top('[data-side="top"]'),
-              start('[data-align="start"]'), end('[data-align="end"]'),
-              center('[data-align="center"]');
+               left('[data-side="left"]'), right('[data-side="right"]'),
+               bottom('[data-side="bottom"]'), top('[data-side="top"]'),
+               start('[data-align="start"]'), end('[data-align="end"]'),
+               center('[data-align="center"]');
 }
 
 .arrow {}
