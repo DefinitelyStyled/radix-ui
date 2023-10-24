@@ -5,7 +5,7 @@
 
 .trigger {
   -st-states: open('[data-state="open"]'), closed('[data-state="closed"]'),
-               disabled('[data-disabled]');
+              disabled('[data-disabled]');
 }
 
 @property st-global(--radix-hover-card-content-transform-origin);
