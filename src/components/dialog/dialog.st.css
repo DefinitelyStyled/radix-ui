@@ -7,8 +7,6 @@
   -st-states: open('[data-state="open"]'), closed('[data-state="closed"]');
 }
 
-.portal {}
-
 .overlay {
   -st-states: open('[data-state="open"]'), closed('[data-state="closed"]');
 }

@@ -18,9 +18,7 @@ export const HoverCardTrigger: typeof RadixHoverCard.Trigger = React.forwardRef(
     }
 );
 
-export const HoverCardPortal: React.FC<RadixHoverCard.HoverCardPortalProps> = (props) => (
-    <RadixHoverCard.Portal {...props} className={st(classes.portal, props.className)} />
-);
+export const HoverCardPortal = RadixHoverCard.Portal;
 
 export const HoverCardContent: typeof RadixHoverCard.Content = React.forwardRef(
     function HoverCardContent(props, forwardRef) {

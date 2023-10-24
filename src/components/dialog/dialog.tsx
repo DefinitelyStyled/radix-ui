@@ -17,9 +17,7 @@ export const DialogTrigger: typeof RadixDialog.Trigger = React.forwardRef(functi
     );
 });
 
-export const DialogPortal: React.FC<RadixDialog.DialogPortalProps> = (props) => (
-    <RadixDialog.Portal {...props} className={st(classes.portal, props.className)} />
-);
+export const DialogPortal = RadixDialog.Portal;
 
 export const DialogOverlay: typeof RadixDialog.Overlay = React.forwardRef(function DialogOverlay(
     props,

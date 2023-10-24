@@ -7,8 +7,6 @@
   -st-states: open('[data-state="open"]'), closed('[data-state="closed"]');
 }
 
-.portal {}
-
 @property st-global(--radix-dropdown-menu-content-transform-origin);
 
 .content {

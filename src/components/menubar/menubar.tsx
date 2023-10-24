@@ -32,9 +32,7 @@ export const MenubarTrigger: typeof RadixMenubar.Trigger = React.forwardRef(func
     );
 });
 
-export const MenubarPortal: React.FC<RadixMenubar.MenubarPortalProps> = (props) => (
-    <RadixMenubar.Portal {...props} className={st(classes.portal, props.className)} />
-);
+export const MenubarPortal = RadixMenubar.Portal;
 
 export const MenubarContent: typeof RadixMenubar.Content = React.forwardRef(function MenubarPortal(
     props,

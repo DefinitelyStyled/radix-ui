@@ -9,8 +9,6 @@
 
 .anchor {}
 
-.portal {}
-
 @property st-global(--radix-popover-content-transform-origin);
 
 .content {

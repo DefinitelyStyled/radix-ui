@@ -9,8 +9,6 @@
               instant-open('[data-state="instant-open"]');
 }
 
-.portal {}
-
 @property st-global(--radix-tooltip-content-transform-origin);
 
 .content {

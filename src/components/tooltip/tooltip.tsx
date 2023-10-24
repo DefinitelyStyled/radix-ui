@@ -23,9 +23,7 @@ export const TooltipTrigger: typeof RadixTooltip.Trigger = React.forwardRef(func
     );
 });
 
-export const TooltipPortal: React.FC<RadixTooltip.TooltipPortalProps> = (props) => (
-    <RadixTooltip.Portal {...props} className={st(classes.portal, props.className)} />
-);
+export const TooltipPortal = RadixTooltip.Portal;
 
 export const TooltipContent: typeof RadixTooltip.Content = React.forwardRef(function TooltipContent(
     props,

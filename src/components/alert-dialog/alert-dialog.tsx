@@ -18,11 +18,7 @@ export const AlertDialogTrigger: typeof RadixAlertDialog.Trigger = React.forward
     }
 );
 
-export const AlertDialogPortal: React.FC<RadixAlertDialog.DialogPortalProps> = function Accordion(
-    props
-) {
-    return <RadixAlertDialog.Portal {...props} className={st(classes.portal, props.className)} />;
-};
+export const AlertDialogPortal = RadixAlertDialog.Portal;
 
 export const AlertDialogOverlay: typeof RadixAlertDialog.Overlay = React.forwardRef(
     function AlertDialogOverlay(props, forwardRef) {
